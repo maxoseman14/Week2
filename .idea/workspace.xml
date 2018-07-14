@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f882f9df-f259-49b8-8fa3-89135bad919e" name="Default" comment="14/07/18">
-      <change beforePath="$PROJECT_DIR$/.idea/QA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f882f9df-f259-49b8-8fa3-89135bad919e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Friday/UpdateMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Friday/QASystemsAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Friday/QASystemsAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Friday/UpdateMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Friday/UpdateMember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,29 +16,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QASystemsAdmin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QASystemsAdmin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
-              <caret line="85" column="20" lean-forward="true" selection-start-line="85" selection-start-column="20" selection-end-line="86" />
+            <state relative-caret-position="364">
+              <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateMember.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Frame2_EventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Thursday/Frame2_EventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-35">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateMember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Friday/UpdateMember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-769">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntryField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Thursday/EntryField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="3111">
+              <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -57,6 +56,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateMember.java" />
+        <option value="$PROJECT_DIR$/src/Friday/QASystemsAdmin.java" />
       </list>
     </option>
   </component>
@@ -120,6 +120,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="QASystemsAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Friday.QASystemsAdmin" />
+      <module name="QA2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Friday.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -161,6 +172,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QASystemsAdmin" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -173,6 +189,14 @@
       <option name="presentableId" value="Default" />
       <updated>1531577623850</updated>
     </task>
+    <task id="LOCAL-00001" summary="14/07/18">
+      <created>1531582680226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531582680226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -181,12 +205,13 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -208,6 +233,15 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="14/07/18" />
+    <option name="LAST_COMMIT_MESSAGE" value="14/07/18" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/QA2.iml">
@@ -248,17 +282,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+    <entry file="file://$PROJECT_DIR$/src/Thursday/Frame2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="85" column="20" lean-forward="true" selection-start-line="85" selection-start-column="20" selection-end-line="86" />
+        <state relative-caret-position="-550">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/UpdateMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="3111">
+          <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Thursday/Frame2_EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

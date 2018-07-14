@@ -120,33 +120,67 @@ public class QASystemsAdmin {
                     @Override
                     public void actionPerformed(ActionEvent e) {
 
-                        Button btn;
-                        btn = (Button) e.getSource();
-                        String what;
-                        what = btn.getLabel();
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
                         System.out.println(what);
 
                         if (what.equals("Add Trainee")) {
                             System.out.println("Add Trainee");
-                            //new UpdateTrainee
-                        }
-                        if (what.equals("Edit Trainee")) {
-                            System.out.println("Edit Trainee");
-                            //new UpdateTrainee
-                        }
-                        if (what.equals("Delete Trainee")) {
-                            System.out.println("Delete Trainee");
-                            //new UpdateTrainee
-                        }
-                        if (what.equals("View Trainee")) {
-                            System.out.println("View Trainee");
-                            //new UpdateTrainee
+                            new UpdateMember();
 
                         }
                     }
                 }
         );
 
+        editTrainee.addActionListener((
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if(what.equals("Edit Trainee")){
+                            System.out.println("Edit Trainee");
+                            new UpdateMember();
+                        }
+                    }
+                }
+                ));
+
+        delTrainee.addActionListener((
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Delete Trainee")) {
+                            System.out.println("Delete Trainee");
+                            new UpdateMember();
+                        }
+                    }
+                }
+        ));
+
+        viewTrainee.addActionListener((
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("View Trainee")) {
+                            System.out.println("View Trainee");
+                            new UpdateMember();
+                        }
+                    }
+                }
+        ));
     }
 }
 
