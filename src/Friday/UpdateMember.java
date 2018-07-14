@@ -21,7 +21,7 @@ public class UpdateMember extends JFrame {
     public UpdateMember() throws HeadlessException {
 
 
-        setSize(400, 800);
+        setSize(400, 700);
         setLayout(new GridLayout(22,1));
 
         //JPanels
@@ -111,7 +111,7 @@ public class UpdateMember extends JFrame {
         p3.add(l5);
         p3.add(qa_ID);
         p3.add(id);
-        p3.add(l6);
+        p3.add(search);
         p3.add(l7);
 
         p5.add(l8);
