@@ -3,22 +3,22 @@ package Friday;
 import javax.swing.*;
 import java.awt.*;
 
-public class UpdateMember extends JFrame {
+public class UpdateTrainee extends JFrame {
 
     JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
     p17, p18, p19, p20, p21, p22;
 
     JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
     l17, l18, l19, l20, l21, l22, l23, qa_ID, client_ID, first_name, last_name,
-    gender, email, role_ID, start, end, update_QA;
+    gender, email, trainer_ID, start, end, update_QA;
 
-    JTextField id, firstName, lastName, emailText, startText, endText, role, client,
+    JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
     genderText;
 
     JButton save, edit, search, delete;
 
 
-    public UpdateMember() throws HeadlessException {
+    public UpdateTrainee() throws HeadlessException {
 
 
         setSize(400, 700);
@@ -78,7 +78,7 @@ public class UpdateMember extends JFrame {
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
-        role_ID = new JLabel("Role ID ");
+        trainer_ID = new JLabel("Role ID ");
         client_ID = new JLabel("Client ID");
         start = new JLabel("Start Date");
         end = new JLabel("End Date ");
@@ -89,7 +89,7 @@ public class UpdateMember extends JFrame {
         firstName = new JTextField(10);
         lastName = new JTextField(10);
         emailText = new JTextField(15);
-        role = new JTextField(10);
+        trainer = new JTextField(10);
         client = new JTextField(10);
         startText = new JTextField(10);
         endText = new JTextField(10);
@@ -130,8 +130,8 @@ public class UpdateMember extends JFrame {
         p9.add(l13);
 
         p11.add(l14);
-        p11.add(role_ID);
-        p11.add(role);
+        p11.add(trainer_ID);
+        p11.add(trainer);
         p11.add(l15);
 
         p13.add(l16);
