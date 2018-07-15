@@ -88,7 +88,7 @@ public class QASystemsAdmin {
                     }
                 }
         );
-/*
+
         updateTrainer.addActionListener((
                 new ActionListener() {
                     @Override
@@ -104,6 +104,8 @@ public class QASystemsAdmin {
                     }
                 }
         ));
+
+        /*
 
         updateClient.addActionListener((
                 new ActionListener() {
