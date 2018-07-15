@@ -67,7 +67,7 @@ public class QASystemsAdmin {
         adminFrame.add(p8);
 
         adminFrame.setVisible(true);
-        adminFrame.setSize(400, 500);
+        adminFrame.setSize(400, 400);
 
 
         updateTrainee.addActionListener(
