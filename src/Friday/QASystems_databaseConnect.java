@@ -4,18 +4,24 @@ import java.sql.*;
 
 public class QASystems_databaseConnect {
 
-    static Connection con = null;
+    private static Connection con = null;
     static Statement stat = null;
 
     public static void buildConnection(){
 
         try{
-            con = DriverManager.getConnection("jdbc:mysql://localhost/qa consulting", "root", "");
+
+            //Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3307/'qa consulting'", "root", "");
             stat = con.createStatement();
 
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
         System.out.println(e.toString());
-    }
+        }
+        //catch (ClassNotFoundException e) {
+          //  e.printStackTrace();
+        //}
 
 
     }

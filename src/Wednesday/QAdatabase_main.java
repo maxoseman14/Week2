@@ -11,7 +11,7 @@ public class QAdatabase_main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
             Class.forName("com.mysql.jdbc.Driver");
-            Connection c = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "");
+            Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3307/test", "root", "");
             Statement s = c.createStatement();
             ResultSet r = s.executeQuery("SELECT * FROM qa;");
             while (r.next()) {

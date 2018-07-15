@@ -4,20 +4,21 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class UpdateTrainee extends JFrame {
 
-    JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
+    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
             p17, p18, p19, p20, p21, p22;
 
-    JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
+    static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
             l17, l18, l19, l20, l21, l22, l23, qa_ID, client_ID, first_name, last_name,
             gender, email, trainer_ID, start, end, update_QA;
 
-    JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
+    static JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
             genderText;
 
-    JButton save, edit, search, delete;
+    static JButton save, edit, search, delete;
 
 
     public UpdateTrainee() throws HeadlessException {
@@ -198,15 +199,37 @@ public class UpdateTrainee extends JFrame {
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
+                        QASystems_databaseConnect.buildConnection();
 
                         if (what.equals("Search")) {
                             System.out.println("Search trainees table");
+                            String qa_ID = id.getText();
+                            String search = "SELECT * FROM trainees WHERE Trainee_ID = " + qa_ID;
+                            System.out.println(search);
+
+                            try {
+                                ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
+                                while (s.next()) {
+                                    UpdateTrainee.id.setText(String.valueOf(s.getObject("Trainee_ID")));
+                                    UpdateTrainee.firstName.setText(String.valueOf(s.getObject("First Name")));
+                                    UpdateTrainee.lastName.setText(String.valueOf(s.getObject("Last Name")));
+                                    UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
+                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Client ID")));
+                                    UpdateTrainee.client.setText(String.valueOf(s.getObject("Trainer ID")));
+                                    UpdateTrainee.startText.setText(String.valueOf(s.getObject("Start Date")));
+                                    UpdateTrainee.endText.setText(String.valueOf(s.getObject("End Date")));
+                                    UpdateTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
+
+                                }
+                            } catch (Exception t) {
+                                System.out.println(t.toString());
+
+                            }
 
                         }
 
+
                     }
-
-
                 }
         );
 
