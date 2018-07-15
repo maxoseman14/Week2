@@ -78,7 +78,6 @@ public class QASystemsAdmin {
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
-                        System.out.println(what);
 
                         if (what.equals("Update Trainee")) {
                             System.out.println("Update Trainee");
@@ -93,6 +92,7 @@ public class QASystemsAdmin {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
@@ -105,12 +105,12 @@ public class QASystemsAdmin {
                 }
         ));
 
-        /*
 
         updateClient.addActionListener((
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
@@ -122,7 +122,7 @@ public class QASystemsAdmin {
                     }
                 }
         ));
-*/
+
     }
 }
 

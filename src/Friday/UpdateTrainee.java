@@ -2,18 +2,20 @@ package Friday;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class UpdateTrainee extends JFrame {
 
     JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
-    p17, p18, p19, p20, p21, p22;
+            p17, p18, p19, p20, p21, p22;
 
     JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
-    l17, l18, l19, l20, l21, l22, l23, qa_ID, client_ID, first_name, last_name,
-    gender, email, trainer_ID, start, end, update_QA;
+            l17, l18, l19, l20, l21, l22, l23, qa_ID, client_ID, first_name, last_name,
+            gender, email, trainer_ID, start, end, update_QA;
 
     JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
-    genderText;
+            genderText;
 
     JButton save, edit, search, delete;
 
@@ -22,30 +24,30 @@ public class UpdateTrainee extends JFrame {
 
 
         setSize(400, 700);
-        setLayout(new GridLayout(22,1));
+        setLayout(new GridLayout(22, 1));
 
         //JPanels
-        p1 = new JPanel (new GridLayout(1, 3));
+        p1 = new JPanel(new GridLayout(1, 3));
         p2 = new JPanel();
-        p3 = new JPanel (new GridLayout(1,5));
+        p3 = new JPanel(new GridLayout(1, 5));
         p4 = new JPanel();
-        p5 = new JPanel (new GridLayout(1,4));
+        p5 = new JPanel(new GridLayout(1, 4));
         p6 = new JPanel();
-        p7 = new JPanel (new GridLayout(1,4));
+        p7 = new JPanel(new GridLayout(1, 4));
         p8 = new JPanel();
-        p9 = new JPanel (new GridLayout(1,4));
+        p9 = new JPanel(new GridLayout(1, 4));
         p10 = new JPanel();
-        p11 = new JPanel (new GridLayout(1,4));
+        p11 = new JPanel(new GridLayout(1, 4));
         p12 = new JPanel();
-        p13 = new JPanel (new GridLayout(1,4));
+        p13 = new JPanel(new GridLayout(1, 4));
         p14 = new JPanel();
-        p15 = new JPanel (new GridLayout(1,4));
+        p15 = new JPanel(new GridLayout(1, 4));
         p16 = new JPanel();
-        p17 = new JPanel (new GridLayout(1,4));
+        p17 = new JPanel(new GridLayout(1, 4));
         p18 = new JPanel();
-        p19 = new JPanel (new GridLayout(1,4));
+        p19 = new JPanel(new GridLayout(1, 4));
         p20 = new JPanel();
-        p21 = new JPanel (new GridLayout(1,7));
+        p21 = new JPanel(new GridLayout(1, 7));
         p22 = new JPanel();
 
 
@@ -185,40 +187,29 @@ public class UpdateTrainee extends JFrame {
         setVisible(true);
 
 
+        //JButton actionListeners
+
+        search.addActionListener(
+
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Search")) {
+                            System.out.println("Search trainees table");
+
+                        }
+
+                    }
 
 
+                }
+        );
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     }
-
-
-
-
-
-
-
-
 }
