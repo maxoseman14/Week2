@@ -84,19 +84,23 @@ public class QASystemsLogin{
                                             if (password.equals("123")) {
                                                 new QASystemsAdmin();
                                             }
-                                           if (userName.equals("USER")) {
-                                                if (password.equals("123")) {
-                                                    new QASystemsUser();
-                                                }
-                                            } else {
-                                                System.out.println("Incorrect Username or Password");
-                                            }
+                                        }
+                                          else if (userName.equals("USER")) {
+                                               if (password.equals("123")) {
+                                                   System.out.println("login user");
+                                                   new QASystemsUser();
+                                               }
+                                           }
+                                    } else
+                                        {
+                                        System.out.println("Incorrect Username or Password");
+                                        }
 
 
                                         }
-                                    }
+
                                 }
-                            }
+
 
                         );
                     }

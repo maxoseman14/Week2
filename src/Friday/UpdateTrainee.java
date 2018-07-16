@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UpdateTrainee extends JFrame {
 
@@ -14,7 +15,7 @@ public class UpdateTrainee extends JFrame {
             p17, p18, p19, p20, p21, p22;
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
-            l17, l18, l19, l20, l21, l22, l23, qa_ID, client_ID, first_name, last_name,
+            l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
             gender, email, trainer_ID, start, end, update_QA;
 
     static JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
@@ -79,7 +80,7 @@ public class UpdateTrainee extends JFrame {
         l21 = new JLabel(" ");
         l22 = new JLabel(" ");
         l23 = new JLabel(" ");
-        qa_ID = new JLabel("QA ID ");
+        trainee_ID = new JLabel("QA ID ");
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
@@ -114,7 +115,7 @@ public class UpdateTrainee extends JFrame {
         p1.add(l4);
 
         p3.add(l5);
-        p3.add(qa_ID);
+        p3.add(trainee_ID);
         p3.add(id);
         p3.add(search);
         p3.add(l7);
@@ -198,28 +199,29 @@ public class UpdateTrainee extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
 
+                        QASystems_databaseConnect.buildConnection();
+
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
-                        QASystems_databaseConnect.buildConnection();
+
 
                         if (what.equals("Search")) {
                             System.out.println("Search trainees table");
-                            String qa_ID = id.getText();
-                            String search = "SELECT * FROM trainees WHERE Trainee_ID = " + qa_ID;
+                            String search = "SELECT * FROM trainees WHERE Trainee_ID = '" + id.getText() +"'";
                             System.out.println(search);
 
                             try {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
                                 while (s.next()) {
                                     UpdateTrainee.id.setText(String.valueOf(s.getObject("Trainee_ID")));
-                                    UpdateTrainee.firstName.setText(String.valueOf(s.getObject("First Name")));
-                                    UpdateTrainee.lastName.setText(String.valueOf(s.getObject("Last Name")));
+                                    UpdateTrainee.firstName.setText(String.valueOf(s.getObject("First_Name")));
+                                    UpdateTrainee.lastName.setText(String.valueOf(s.getObject("Last_Name")));
                                     UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
-                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Client ID")));
-                                    UpdateTrainee.client.setText(String.valueOf(s.getObject("Trainer ID")));
-                                    UpdateTrainee.startText.setText(String.valueOf(s.getObject("Start Date")));
-                                    UpdateTrainee.endText.setText(String.valueOf(s.getObject("End Date")));
+                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Client_ID")));
+                                    UpdateTrainee.client.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                    UpdateTrainee.startText.setText(String.valueOf(s.getObject("Start_Date")));
+                                    UpdateTrainee.endText.setText(String.valueOf(s.getObject("End_Date")));
                                     UpdateTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
 
                                 }
@@ -234,6 +236,58 @@ public class UpdateTrainee extends JFrame {
                     }
                 }
         );
+
+        delete.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        QASystems_databaseConnect.buildConnection();
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+
+                        if(what.equals("Delete")){
+
+                            try{
+                                QASystems_databaseConnect.stat.executeUpdate("DELETE FROM trainees WHERE Trainee_ID = '" + id.getText() +"'" );
+                                System.out.println("Delete records from the trainees table");
+                            } catch (SQLException e1) {
+                                System.out.println(e1.toString());
+                            }
+
+
+                        }
+
+                    }
+                }
+        );
+
+        save.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        QASystems_databaseConnect.buildConnection();
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Save")){
+                            String traineeID = "", firstName = "", lastName = "", clientID = "",
+                                    trainerID = "", startdate = "", enddate = "", gender = "";
+
+                            
+                        }
+
+
+                    }
+                }
+        );
+
 
 
     }
