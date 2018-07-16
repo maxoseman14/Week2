@@ -1,4 +1,4 @@
-package Friday;
+package Thursday;
 
 import javax.swing.*;
 import java.awt.*;

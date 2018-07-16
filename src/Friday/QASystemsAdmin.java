@@ -9,6 +9,7 @@ public class QASystemsAdmin extends JFrame {
 
     JPanel p1, p2, p3, p4, p5, p6, p7, p8;
     JLabel ADMIN, l1, l2, l3, l4, l5, l6, l7, l8;
+    JButton updateTrainee, updateTrainer, updateClient;
 
 
     public QASystemsAdmin () throws HeadlessException {
@@ -36,9 +37,9 @@ public class QASystemsAdmin extends JFrame {
         l8 = new JLabel(" ");
 
 
-        JButton updateTrainee = new JButton("Update Trainee");
-        JButton updateTrainer = new JButton("Update Trainer");
-        JButton updateClient = new JButton("Update Client");
+        updateTrainee = new JButton("Update Trainee");
+        updateTrainer = new JButton("Update Trainer");
+        updateClient = new JButton("Update Client");
 
         //Panel 1
         p1.add(l1);

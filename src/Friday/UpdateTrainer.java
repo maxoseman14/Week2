@@ -9,7 +9,7 @@ public class UpdateTrainer extends JFrame {
 
     JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13;
     JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, update_Trainer,
-    trainerID, firstnName, lastName, email, gender;
+    trainerID, firstName, lastName, email, gender;
     JTextField trainerText, firstText, lastText, emailText, genderText;
     JButton search, save, edit, delete;
 
@@ -46,7 +46,7 @@ public class UpdateTrainer extends JFrame {
         l11 = new JLabel(" ");
         update_Trainer = new JLabel("Update Trainer");
         trainerID = new JLabel("Trainer ID");
-        firstnName = new JLabel("First Name");
+        firstName = new JLabel("First Name");
         lastName = new JLabel("Last Name");
         email = new JLabel("Email");
         gender = new JLabel("Gender");
@@ -72,7 +72,7 @@ public class UpdateTrainer extends JFrame {
         p3.add(search);
 
         p5.add(l4);
-        p5.add(firstnName);
+        p5.add(firstName);
         p5.add(firstText);
         p5.add(l5);
 

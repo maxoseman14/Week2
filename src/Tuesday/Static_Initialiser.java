@@ -13,6 +13,6 @@ public class Static_Initialiser {
 
     }
     public void setX(int x){
-        this.x = x;
+        Static_Initialiser.x = x;
     }
 }
