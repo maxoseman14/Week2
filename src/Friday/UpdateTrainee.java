@@ -280,7 +280,8 @@ public class UpdateTrainee extends JFrame {
                             String traineeID = "", firstName = "", lastName = "", clientID = "",
                                     trainerID = "", startdate = "", enddate = "", gender = "";
 
-                            
+
+
                         }
 
 

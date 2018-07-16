@@ -4,6 +4,10 @@ package Friday;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.SQLException;
+import java.util.Calendar;
 
 public class UpdateClient extends JFrame {
 
@@ -31,6 +35,10 @@ public class UpdateClient extends JFrame {
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
+        l3= new JLabel();
+        l4= new JLabel();
+        l5= new JLabel();
+
         update_client = new JLabel("Update Client ");
         client_ID = new JLabel("Client ID");
         name = new JLabel("Name");
@@ -42,10 +50,10 @@ public class UpdateClient extends JFrame {
         emailText = new JTextField(20);
         sectorText = new JTextField(20);
 
-        search = new JButton();
-        save = new JButton();
-        edit = new JButton();
-        delete = new JButton();
+        search = new JButton("Search");
+        save = new JButton("Save");
+        edit = new JButton("Edit");
+        delete = new JButton("Delete");
 
         p1.add(l1);
         p1.add(update_client);
@@ -85,7 +93,74 @@ public class UpdateClient extends JFrame {
 
         setVisible(true);
 
+        save.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
 
+                        QASystems_databaseConnect.buildConnection();
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if(what.equals("Save")){
+
+                            String clientID, name, email, sector, currentMonth = "";
+                            Calendar now = Calendar.getInstance();
+                            name = nameText.getText();
+                            email = emailText.getText();
+                            sector = sectorText.getText();
+
+                            int month = now.get(Calendar.MONTH);
+                            if (month == 1){
+                                currentMonth = "Jan";
+                            }
+                            if (month == 2) {
+                                currentMonth = "Feb";
+                            }
+                            if (month == 3) {
+                                currentMonth = "Mar";
+                            }
+                            if (month == 4) {
+                                currentMonth = "Apr";
+                            }
+                            if (month == 5) {
+                                currentMonth = "May";
+                            }
+                            if (month == 6) {
+                                currentMonth = "Jun";
+                            }
+                            if (month == 7) {
+                                currentMonth = "Jul";
+                            }
+                            if (month == 8) {
+                                currentMonth = "Aug";
+                            }
+                            if (month == 9) {
+                                currentMonth = "Sep";
+                            }
+                            if (month == 10) {
+                                currentMonth = "Oct";
+                            }
+                            if (month == 11) {
+                                currentMonth = "Nov";
+                            }
+                            if (month == 12) {
+                                currentMonth = "Dec";
+                            }
+
+                            clientID = name.substring(0,3) + currentMonth + now.get(Calendar.YEAR);
+                            try {
+                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + name + "','"
+                                        + email + "','" + sector + "')");
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
+                    }
+                }
+        );
 
 
 
