@@ -1,5 +1,7 @@
 package Friday;
 
+//Update Trainer JFrame
+
 import javax.swing.*;
 import java.awt.*;
 

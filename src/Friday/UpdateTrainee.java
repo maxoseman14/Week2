@@ -1,5 +1,7 @@
 package Friday;
 
+//Update Trainee JFrame
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

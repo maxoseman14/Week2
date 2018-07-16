@@ -1,5 +1,7 @@
 package Friday;
 
+//update client JFrame
+
 import javax.swing.*;
 import java.awt.*;
 

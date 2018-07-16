@@ -5,32 +5,35 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class QASystemsAdmin {
+public class QASystemsAdmin extends JFrame {
 
-    public static void main(String[] args) {
+    JPanel p1, p2, p3, p4, p5, p6, p7, p8;
+    JLabel ADMIN, l1, l2, l3, l4, l5, l6, l7, l8;
 
-        JFrame adminFrame = new JFrame();
 
-        adminFrame.setLayout(new GridLayout(7, 1));
+    public QASystemsAdmin () throws HeadlessException {
 
-        JPanel p1 = new JPanel(new GridLayout(1, 3));
-        JPanel p2 = new JPanel();
-        JPanel p3 = new JPanel(new GridLayout(1, 3));
-        JPanel p4 = new JPanel();
-        JPanel p5 = new JPanel(new GridLayout(1, 3));
-        JPanel p6 = new JPanel();
-        JPanel p7 = new JPanel(new GridLayout(1, 3));
-        JPanel p8 = new JPanel();
 
-        JLabel ADMIN = new JLabel("Admin");
-        JLabel l1 = new JLabel(" ");
-        JLabel l2 = new JLabel(" ");
-        JLabel l3 = new JLabel(" ");
-        JLabel l4 = new JLabel(" ");
-        JLabel l5 = new JLabel(" ");
-        JLabel l6 = new JLabel(" ");
-        JLabel l7 = new JLabel(" ");
-        JLabel l8 = new JLabel(" ");
+        setLayout(new GridLayout(7, 1));
+
+        p1 = new JPanel(new GridLayout(1, 3));
+        p2 = new JPanel();
+        p3 = new JPanel(new GridLayout(1, 3));
+        p4 = new JPanel();
+        p5 = new JPanel(new GridLayout(1, 3));
+        p6 = new JPanel();
+        p7 = new JPanel(new GridLayout(1, 3));
+        p8 = new JPanel();
+
+        ADMIN = new JLabel("Admin");
+        l1 = new JLabel(" ");
+        l2 = new JLabel(" ");
+        l3 = new JLabel(" ");
+        l4 = new JLabel(" ");
+        l5 = new JLabel(" ");
+        l6 = new JLabel(" ");
+        l7 = new JLabel(" ");
+        l8 = new JLabel(" ");
 
 
         JButton updateTrainee = new JButton("Update Trainee");
@@ -57,17 +60,17 @@ public class QASystemsAdmin {
         p7.add(updateClient);
         p7.add(l8);
 
-        adminFrame.add(p1);
-        adminFrame.add(p2);
-        adminFrame.add(p3);
-        adminFrame.add(p4);
-        adminFrame.add(p5);
-        adminFrame.add(p6);
-        adminFrame.add(p7);
-        adminFrame.add(p8);
+        add(p1);
+        add(p2);
+        add(p3);
+        add(p4);
+        add(p5);
+        add(p6);
+        add(p7);
+        add(p8);
 
-        adminFrame.setVisible(true);
-        adminFrame.setSize(400, 400);
+        setVisible(true);
+        setSize(300, 400);
 
 
         updateTrainee.addActionListener(
