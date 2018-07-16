@@ -6,15 +6,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Calendar;
 
 public class UpdateClient extends JFrame {
 
-    JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11;
-    JLabel l1, l2, l3, l4, l5, update_client, client_ID, name, email, sector;
-    JTextField clientText, nameText, emailText, sectorText;
-    JButton search, save, edit, delete;
+    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11;
+    static JLabel l1, l2, l3, l4, l5, update_client, client_ID, name, email, sector;
+    static JTextField clientText, nameText, emailText, sectorText;
+    static JButton search, save, edit, delete;
 
     public UpdateClient() throws HeadlessException{
 
@@ -158,6 +159,35 @@ public class UpdateClient extends JFrame {
                                 e1.printStackTrace();
                             }
                         }
+                    }
+                }
+        );
+
+        search.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        QASystems_databaseConnect.buildConnection();
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if(what.equals("Search")){
+                            System.out.println("Search Clients");
+                            String search = "SELECT * FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
+                            System.out.println(search);
+
+                            try{
+                                ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
+                                while(s.next()){
+                                    UpdateClient.clientText.setText(String.valueOf(s.getObject("Client_ID")));
+                                }
+                            }
+                        }
+
+
                     }
                 }
         );
