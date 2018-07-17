@@ -4,11 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class ViewTrainee extends JFrame{
 
     static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
-            p17, p18, p19, p20, p21, p22;
+            p17, p18, p19, p20;
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
             l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
@@ -17,12 +19,12 @@ public class ViewTrainee extends JFrame{
     static JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
             genderText;
 
-    static JButton view;
+    static JButton search;
 
     public ViewTrainee ()throws HeadlessException{
 
         setSize(400, 700);
-        setLayout(new GridLayout(22, 1));
+        setLayout(new GridLayout(20, 1));
 
         //JPanels
         p1 = new JPanel(new GridLayout(1, 3));
@@ -45,8 +47,7 @@ public class ViewTrainee extends JFrame{
         p18 = new JPanel();
         p19 = new JPanel(new GridLayout(1, 4));
         p20 = new JPanel();
-        p21 = new JPanel(new GridLayout(1, 7));
-        p22 = new JPanel();
+
 
 
         //JLabels
@@ -73,12 +74,11 @@ public class ViewTrainee extends JFrame{
         l20 = new JLabel(" ");
         l21 = new JLabel(" ");
         l22 = new JLabel(" ");
-        l23 = new JLabel(" ");
         trainee_ID = new JLabel("QA ID ");
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
-        trainer_ID = new JLabel("Role ID ");
+        trainer_ID = new JLabel("Trainer ID ");
         client_ID = new JLabel("Client ID");
         start = new JLabel("Start Date");
         end = new JLabel("End Date ");
@@ -96,7 +96,7 @@ public class ViewTrainee extends JFrame{
         genderText = new JTextField(5);
 
         //JButton
-        view = new JButton("View");
+        search = new JButton("Search");
 
         //add labels, textfields and buttons to panels
         p1.add(l1);
@@ -108,48 +108,48 @@ public class ViewTrainee extends JFrame{
         p3.add(l5);
         p3.add(trainee_ID);
         p3.add(id);
-        p3.add(view);
-        p3.add(l7);
+        p3.add(search);
+        p3.add(l6);
 
-        p5.add(l8);
+        p5.add(l7);
         p5.add(first_name);
         p5.add(firstName);
-        p5.add(l9);
+        p5.add(l8);
 
-        p7.add(l10);
+        p7.add(l9);
         p7.add(last_name);
         p7.add(lastName);
-        p7.add(l11);
+        p7.add(l10);
 
-        p9.add(l12);
+        p9.add(l11);
         p9.add(email);
         p9.add(emailText);
-        p9.add(l13);
+        p9.add(l12);
 
-        p11.add(l14);
+        p11.add(l13);
         p11.add(trainer_ID);
         p11.add(trainer);
-        p11.add(l15);
+        p11.add(l14);
 
-        p13.add(l16);
+        p13.add(l15);
         p13.add(client_ID);
         p13.add(client);
-        p13.add(l17);
+        p13.add(l16);
 
-        p15.add(l18);
+        p15.add(l17);
         p15.add(start);
         p15.add(startText);
-        p15.add(l19);
+        p15.add(l18);
 
-        p17.add(l20);
+        p17.add(l19);
         p17.add(end);
         p17.add(endText);
-        p17.add(l21);
+        p17.add(l20);
 
-        p19.add(l22);
+        p19.add(l21);
         p19.add(gender);
         p19.add(genderText);
-        p19.add(l23);
+        p19.add(l22);
 
         //add JPanels to JFrame
 
@@ -178,17 +178,37 @@ public class ViewTrainee extends JFrame{
 
         //JButton actionlistener
 
-        view.addActionListener(
+        search.addActionListener(
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+                        
 
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
 
-                        if(what.equals("View")){
-                            
+                        if(what.equals("Search")){
+                            System.out.println("View Trainee");
+                            String search = "SELECT*FROM trainees WHERE Trainee_ID = '" + id.getText() + "'";
+                            System.out.println(search);
+
+                            try{
+                                ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
+                                while (s.next()){
+                                    ViewTrainee.id.setText(String.valueOf(s.getObject("Trainee_ID")));
+                                    ViewTrainee.firstName.setText(String.valueOf(s.getObject("First_Name")));
+                                    ViewTrainee.lastName.setText(String.valueOf(s.getObject("Last_Name")));
+                                    ViewTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
+                                    ViewTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                    ViewTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
+                                    ViewTrainee.startText.setText(String.valueOf(s.getObject("Start_Date")));
+                                    ViewTrainee.endText.setText(String.valueOf(s.getObject("End_Date")));
+                                    ViewTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
+                                }
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
 
                         }
                     }

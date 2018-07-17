@@ -184,6 +184,8 @@ public class UpdateClient extends JFrame {
                                 while(s.next()){
                                     UpdateClient.clientText.setText(String.valueOf(s.getObject("Client_ID")));
                                 }
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
                             }
                         }
 

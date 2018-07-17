@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 public class QASystemsLogin{
 
     public static void main(String[] args) {
+
+        QASystems_databaseConnect.buildConnection();
+
             JFrame loginF = new JFrame();
             loginF.setLayout(new GridLayout(7, 1));
 

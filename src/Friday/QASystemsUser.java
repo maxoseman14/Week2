@@ -80,6 +80,7 @@ public class QASystemsUser extends JFrame {
                         String what = button.getText();
 
                         if (what.equals("View Trainee")){
+                            new ViewTrainee();
                         }
 
                     }
@@ -95,6 +96,7 @@ public class QASystemsUser extends JFrame {
                         String what = button.getText();
 
                         if(what.equals("View Trainer")){
+                            new ViewTrainer();
                         }
                     }
                 }
@@ -109,7 +111,7 @@ public class QASystemsUser extends JFrame {
                         String what = button.getText();
 
                         if(what.equals("View Client")){
-
+                            new ViewClient();
                         }
                     }
                 }
