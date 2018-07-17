@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class QASystems_databaseConnect {
 
-    private static Connection con = null;
+    static Connection con = null;
     static Statement stat = null;
 
     public static void buildConnection(){

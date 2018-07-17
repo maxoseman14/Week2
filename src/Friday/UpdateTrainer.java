@@ -140,9 +140,58 @@ public class UpdateTrainer extends JFrame {
                             }
                         }
 
-
+                    }
+                }
         );
 
+
+        delete.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Delete")) {
+                            try {
+                                QASystems_databaseConnect.stat.executeUpdate("DELETE FROM trainers WHERE Trainer_ID = '"
+                                        + trainerText.getText() + "'");
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
+
+                        }
+                    }
+                }
+        );
+
+        save.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+
+                        if (what.equals("Save")){
+                            String trainerID =  genderText.getText() + firstText.getText().substring(0,3) + "T"; //need to increment starting at 001
+
+                            try{
+                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO trainers VALUES('" + trainerID + "','" + firstText.getText()
+                                        + "','" + lastText.getText() + "','" + emailText.getText() + "','" + genderText.getText() + "')");
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
+
+                        }
+
+                    }
+                }
+        );
 
 
 

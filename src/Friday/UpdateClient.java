@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Calendar;
@@ -105,11 +106,9 @@ public class UpdateClient extends JFrame {
 
                         if (what.equals("Save")) {
 
-                            String clientID, name, email, sector, currentMonth = "";
+                            String clientID, currentMonth = "";
                             Calendar now = Calendar.getInstance();
-                            name = nameText.getText();
-                            email = emailText.getText();
-                            sector = sectorText.getText();
+
 
                             int month = now.get(Calendar.MONTH);
                             if (month == 1) {
@@ -149,10 +148,10 @@ public class UpdateClient extends JFrame {
                                 currentMonth = "Dec";
                             }
 
-                            clientID = name.substring(0, 3) + currentMonth + now.get(Calendar.YEAR);
+                            clientID = name.getText().substring(0,3) + currentMonth + now.get(Calendar.YEAR);
                             try {
-                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + name + "','"
-                                        + email + "','" + sector + "')");
+                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + name.getText() + "','"
+                                        + email.getText() + "','" + sector.getText() + "')");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
@@ -221,25 +220,27 @@ public class UpdateClient extends JFrame {
                     public void actionPerformed(ActionEvent e) {
 
                         JButton button;
-                        button = (JButton) e.getSource(
+                        button = (JButton) e.getSource();
 
-                        );
                         String what = button.getText();
-                        String newName = nameText.getText();
-                        String newEmail = emailText.getText();
-                        String newSector = sectorText.getText();
-
                         if (what.equals("Edit")) {
-                            try{
-                                QASystems_databaseConnect.stat.executeUpdate("UPDATE clients SET Name = '" + newName + "',
-                                        " Email = '" + newEmail + "'", " Sector = '" + newSector + "'" , " WHERE Client_ID = '" + clientText + "'");
-
+                            try {
+                                PreparedStatement ps = QASystems_databaseConnect.con.prepareStatement("UPDATE clients SET `Name`=?, `Email`=?, `Sector`=? WHERE `Client_ID`=?;");
+                                ps.setString(1,nameText.getText());
+                                ps.setString(2,emailText.getText());
+                                ps.setString(3,sector.getText());
+                                ps.setString(4,clientText.getText());
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
                             }
-
+)
+                            }
                         }
 
                     }
+                    );
                 }
-        );
-    }
+
+
 }
+
