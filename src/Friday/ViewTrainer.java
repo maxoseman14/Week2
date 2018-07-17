@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class ViewTrainer extends JFrame {
 
-    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13;
+    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12;
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, update_Trainer,
             trainerID, firstName, lastName, email, gender;
     static JTextField trainerText, firstText, lastText, emailText, genderText;
@@ -34,7 +34,7 @@ public class ViewTrainer extends JFrame {
         p10 = new JPanel();
         p11 = new JPanel(new GridLayout(1,4));
         p12 = new JPanel();
-        p13 = new JPanel(new GridLayout(1,3));
+
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
@@ -57,7 +57,7 @@ public class ViewTrainer extends JFrame {
         trainerText = new JTextField(10);
         firstText = new JTextField(10);
         lastText = new JTextField(10);
-        emailText = new JTextField(10);
+        emailText = new JTextField(15);
         genderText = new JTextField(10);
 
         search = new JButton("Search");
@@ -104,7 +104,6 @@ public class ViewTrainer extends JFrame {
         add(p10);
         add(p11);
         add(p12);
-        add(p13);
 
         setVisible(true);
 
@@ -127,17 +126,17 @@ public class ViewTrainer extends JFrame {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
                                 while (s.next()) {
                                     ViewTrainer.trainerText.setText(String.valueOf(s.getObject("Trainer_ID")));
-                                    ViewTrainee.firstName.setText(String.valueOf(s.getObject("First_Name")));
-                                    ViewTrainee.lastName.setText(String.valueOf(s.getObject("Last_Name")));
-                                    ViewTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
-                                    ViewTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
+                                    ViewTrainer.firstText.setText(String.valueOf(s.getObject("First_Name")));
+                                    ViewTrainer.lastText.setText(String.valueOf(s.getObject("Last_Name")));
+                                    ViewTrainer.emailText.setText(String.valueOf(s.getObject("Email")));
+                                    ViewTrainer.genderText.setText(String.valueOf(s.getObject("Gender")));
                                 }
 
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
                         }
-                    }
+                        }
                 }
         );
     }

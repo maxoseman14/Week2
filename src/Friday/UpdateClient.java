@@ -17,7 +17,7 @@ public class UpdateClient extends JFrame {
     static JTextField clientText, nameText, emailText, sectorText;
     static JButton search, save, edit, delete;
 
-    public UpdateClient() throws HeadlessException{
+    public UpdateClient() throws HeadlessException {
 
         setSize(400, 500);
         setLayout(new GridLayout(9, 1));
@@ -36,9 +36,9 @@ public class UpdateClient extends JFrame {
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
-        l3= new JLabel();
-        l4= new JLabel();
-        l5= new JLabel();
+        l3 = new JLabel();
+        l4 = new JLabel();
+        l5 = new JLabel();
 
         update_client = new JLabel("Update Client ");
         client_ID = new JLabel("Client ID");
@@ -99,13 +99,11 @@ public class UpdateClient extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
 
-                        QASystems_databaseConnect.buildConnection();
-
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
 
-                        if(what.equals("Save")){
+                        if (what.equals("Save")) {
 
                             String clientID, name, email, sector, currentMonth = "";
                             Calendar now = Calendar.getInstance();
@@ -114,7 +112,7 @@ public class UpdateClient extends JFrame {
                             sector = sectorText.getText();
 
                             int month = now.get(Calendar.MONTH);
-                            if (month == 1){
+                            if (month == 1) {
                                 currentMonth = "Jan";
                             }
                             if (month == 2) {
@@ -151,7 +149,7 @@ public class UpdateClient extends JFrame {
                                 currentMonth = "Dec";
                             }
 
-                            clientID = name.substring(0,3) + currentMonth + now.get(Calendar.YEAR);
+                            clientID = name.substring(0, 3) + currentMonth + now.get(Calendar.YEAR);
                             try {
                                 QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + name + "','"
                                         + email + "','" + sector + "')");
@@ -168,20 +166,19 @@ public class UpdateClient extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
 
-                        QASystems_databaseConnect.buildConnection();
 
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
 
-                        if(what.equals("Search")){
+                        if (what.equals("Search")) {
                             System.out.println("Search Clients");
                             String search = "SELECT * FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
                             System.out.println(search);
 
-                            try{
+                            try {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
-                                while(s.next()){
+                                while (s.next()) {
                                     UpdateClient.clientText.setText(String.valueOf(s.getObject("Client_ID")));
                                 }
                             } catch (SQLException e1) {
@@ -194,15 +191,55 @@ public class UpdateClient extends JFrame {
                 }
         );
 
+        delete.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
 
+                        QASystems_databaseConnect.buildConnection();
 
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
 
+                        if (what.equals("Delete")) {
+                            try {
+                                QASystems_databaseConnect.stat.executeUpdate("DELETE FROM clients WHERE Client_ID = '"
+                                        + clientText.getText() + "'");
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
 
+                        }
+                    }
+                }
+        );
 
+        edit.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
 
+                        JButton button;
+                        button = (JButton) e.getSource(
 
+                        );
+                        String what = button.getText();
+                        String newName = nameText.getText();
+                        String newEmail = emailText.getText();
+                        String newSector = sectorText.getText();
+
+                        if (what.equals("Edit")) {
+                            try{
+                                QASystems_databaseConnect.stat.executeUpdate("UPDATE clients SET Name = '" + newName + "',
+                                        " Email = '" + newEmail + "'", " Sector = '" + newSector + "'" , " WHERE Client_ID = '" + clientText + "'");
+
+                            }
+
+                        }
+
+                    }
+                }
+        );
     }
-
-
-
 }

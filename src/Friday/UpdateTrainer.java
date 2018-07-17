@@ -4,6 +4,10 @@ package Friday;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UpdateTrainer extends JFrame {
 
@@ -111,6 +115,33 @@ public class UpdateTrainer extends JFrame {
 
         setVisible(true);
 
+
+        search.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Search")) {
+                            System.out.println("Search Trainers");
+                            String search = "SELECT * FROM trainers WHERE Trainer_ID = '" + trainerText.getText() + "'";
+                            System.out.println(search);
+
+                            try {
+                                ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
+                                while (s.next()) {
+                                    UpdateClient.clientText.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                }
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
+
+
+        );
 
 
 

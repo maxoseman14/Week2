@@ -182,7 +182,7 @@ public class ViewTrainee extends JFrame{
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        
+
 
                         JButton button;
                         button = (JButton) e.getSource();
