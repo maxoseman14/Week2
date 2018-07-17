@@ -70,6 +70,51 @@ public class QASystemsUser extends JFrame {
 
 
 
+        viewTrainee.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("View Trainee")){
+                        }
+
+                    }
+                }
+        );
+        viewTrainer.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if(what.equals("View Trainer")){
+                        }
+                    }
+                }
+        );
+        viewClient.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if(what.equals("View Client")){
+
+                        }
+                    }
+                }
+        );
+
 
 
     }
