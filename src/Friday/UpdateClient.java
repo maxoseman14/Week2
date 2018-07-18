@@ -21,7 +21,7 @@ public class UpdateClient extends JFrame {
     public UpdateClient() throws HeadlessException {
 
         setSize(400, 500);
-        setLayout(new GridLayout(9, 1));
+        setLayout(new GridLayout(11, 1));
 
         p1 = new JPanel(new GridLayout(1, 3));
         p2 = new JPanel();
@@ -37,9 +37,9 @@ public class UpdateClient extends JFrame {
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
-        l3 = new JLabel();
-        l4 = new JLabel();
-        l5 = new JLabel();
+        l3 = new JLabel(" ");
+        l4 = new JLabel(" ");
+        l5 = new JLabel(" ");
 
         update_client = new JLabel("Update Client ");
         client_ID = new JLabel("Client ID");
@@ -148,10 +148,10 @@ public class UpdateClient extends JFrame {
                                 currentMonth = "Dec";
                             }
 
-                            clientID = name.getText().substring(0,3) + currentMonth + now.get(Calendar.YEAR);
+                            clientID = nameText.getText().substring(0,3) + currentMonth + now.get(Calendar.YEAR);
                             try {
-                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + name.getText() + "','"
-                                        + email.getText() + "','" + sector.getText() + "')");
+                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + nameText.getText() + "','"
+                                        + emailText.getText() + "','" + sectorText.getText() + "')");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
@@ -172,13 +172,15 @@ public class UpdateClient extends JFrame {
 
                         if (what.equals("Search")) {
                             System.out.println("Search Clients");
-                            String search = "SELECT * FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
+                            String search = "SELECT * FROM clients WHERE Client_ID = '" + clientText.getText() + "'";
                             System.out.println(search);
 
                             try {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
                                 while (s.next()) {
-                                    UpdateClient.clientText.setText(String.valueOf(s.getObject("Client_ID")));
+                                    UpdateClient.nameText.setText(String.valueOf(s.getObject("Name")));
+                                    UpdateClient.emailText.setText(String.valueOf(s.getObject("Email")));
+                                    UpdateClient.sectorText.setText(String.valueOf(s.getObject("Sector")));
                                 }
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
@@ -202,6 +204,7 @@ public class UpdateClient extends JFrame {
                         String what = button.getText();
 
                         if (what.equals("Delete")) {
+
                             try {
                                 QASystems_databaseConnect.stat.executeUpdate("DELETE FROM clients WHERE Client_ID = '"
                                         + clientText.getText() + "'");
@@ -214,6 +217,7 @@ public class UpdateClient extends JFrame {
                 }
         );
 
+
         edit.addActionListener(
                 new ActionListener() {
                     @Override
@@ -222,18 +226,20 @@ public class UpdateClient extends JFrame {
                         JButton button;
                         button = (JButton) e.getSource();
 
+
                         String what = button.getText();
                         if (what.equals("Edit")) {
                             try {
                                 PreparedStatement ps = QASystems_databaseConnect.con.prepareStatement("UPDATE clients SET `Name`=?, `Email`=?, `Sector`=? WHERE `Client_ID`=?;");
                                 ps.setString(1,nameText.getText());
                                 ps.setString(2,emailText.getText());
-                                ps.setString(3,sector.getText());
+                                ps.setString(3,sectorText.getText());
                                 ps.setString(4,clientText.getText());
+                                System.out.println(ps);
+                                ps.executeUpdate();
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
-)
                             }
                         }
 
