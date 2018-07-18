@@ -278,9 +278,13 @@ public class UpdateTrainee extends JFrame {
                         String what = button.getText();
 
                         if (what.equals("Save")){
-                            String traineeID = "", firstName = "", lastName = "", clientID = "",
-                                    trainerID = "", startdate = "", enddate = "", gender = "";
-
+                            try {
+                                String query = "INSERT INTO trainees VALUES(Trainee_ID('" + genderText.getText() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + startText.getText() + "', '" + endText.getText() + "', '" + genderText.getText() + "'";
+                                System.out.println(query);
+                                QASystems_databaseConnect.stat.execute("INSERT INTO trainees VALUES(Trainee_ID('" + genderText.getText() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + startText.getText() + "', '" + endText.getText() + "', '" + genderText.getText() + "'");
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
 
 
                         }
