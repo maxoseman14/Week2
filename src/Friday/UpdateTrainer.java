@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class UpdateTrainer extends JFrame {
 
     static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13;
-    static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, update_Trainer,
+    static JLabel l1, l2, l3, l4, l5, l6, l7, update_Trainer,
     trainerID, firstName, lastName, email, gender;
     static JTextField trainerText, firstText, lastText, emailText, genderText;
     static JButton search, save, edit, delete;
@@ -44,11 +44,6 @@ public class UpdateTrainer extends JFrame {
         l4 = new JLabel(" ");
         l5 = new JLabel(" ");
         l6 = new JLabel(" ");
-        l7 = new JLabel(" ");
-        l8 = new JLabel(" ");
-        l9 = new JLabel(" ");
-        l10 = new JLabel(" ");
-        l11 = new JLabel(" ");
         update_Trainer = new JLabel("Update Trainer");
         trainerID = new JLabel("Trainer ID");
         firstName = new JLabel("First Name");
@@ -71,25 +66,24 @@ public class UpdateTrainer extends JFrame {
         p1.add(update_Trainer);
         p1.add(l2);
 
-        p3.add(l3);
         p3.add(trainerID);
         p3.add(trainerText);
         p3.add(search);
 
-        p5.add(l4);
         p5.add(firstName);
+        p5.add(l3);
         p5.add(firstText);
 
-        p7.add(l5);
         p7.add(lastName);
+        p7.add(l4);
         p7.add(lastText);
 
-        p9.add(l6);
         p9.add(email);
+        p9.add(l5);
         p9.add(emailText);
 
-        p11.add(l7);
         p11.add(gender);
+        p11.add(l6);
         p11.add(genderText);
 
         p13.add(save);
@@ -179,11 +173,11 @@ public class UpdateTrainer extends JFrame {
 
 
                         if (what.equals("Save")){
-                            String trainerID =  genderText.getText() + firstText.getText().substring(0,3) + "T"; //need to increment starting at 001
-
                             try{
-                                QASystems_databaseConnect.stat.executeUpdate("INSERT INTO trainers VALUES('" + trainerID + "','" + firstText.getText()
-                                        + "','" + lastText.getText() + "','" + emailText.getText() + "','" + genderText.getText() + "')");
+                                String query = "INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() +"','" + emailText.getText() +"','"+ genderText.getText() +"'";
+                                System.out.println(query);
+                                QASystems_databaseConnect.stat.execute("INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() + "', '" + emailText.getText() +"','"+ genderText.getText() +"'");
+
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }

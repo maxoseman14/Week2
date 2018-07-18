@@ -15,7 +15,7 @@ public class QASystemsAdmin extends JFrame {
     public QASystemsAdmin () throws HeadlessException {
 
 
-        setLayout(new GridLayout(7, 1));
+        setLayout(new GridLayout(8, 1));
 
         p1 = new JPanel(new GridLayout(1, 3));
         p2 = new JPanel();
@@ -71,7 +71,7 @@ public class QASystemsAdmin extends JFrame {
         add(p8);
 
         setVisible(true);
-        setSize(300, 400);
+        setSize(400, 400);
 
 
         updateTrainee.addActionListener(
