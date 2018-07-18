@@ -176,7 +176,7 @@ public class UpdateTrainer extends JFrame {
                             try{
                                 String query = "INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() +"','" + emailText.getText() +"','"+ genderText.getText() +"'";
                                 System.out.println(query);
-                                QASystems_databaseConnect.stat.execute("INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() + "', '" + emailText.getText() +"','"+ genderText.getText() +"'");
+                                QASystems_databaseConnect.stat.execute("INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() + "'),'"+ firstText.getText() +"','" + lastText.getText() + "', '" + emailText.getText() +"','"+ genderText.getText() +"')");
 
                             } catch (SQLException e1) {
                                 e1.printStackTrace();

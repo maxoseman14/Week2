@@ -85,7 +85,7 @@ public class UpdateTrainee extends JFrame {
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
-        trainer_ID = new JLabel("Role ID ");
+        trainer_ID = new JLabel("Trainer ID");
         client_ID = new JLabel("Client ID");
         start = new JLabel("Start Date");
         end = new JLabel("End Date ");
@@ -219,8 +219,8 @@ public class UpdateTrainee extends JFrame {
                                     UpdateTrainee.firstName.setText(String.valueOf(s.getObject("First_Name")));
                                     UpdateTrainee.lastName.setText(String.valueOf(s.getObject("Last_Name")));
                                     UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
-                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Client_ID")));
-                                    UpdateTrainee.client.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                    UpdateTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
                                     UpdateTrainee.startText.setText(String.valueOf(s.getObject("Start_Date")));
                                     UpdateTrainee.endText.setText(String.valueOf(s.getObject("End_Date")));
                                     UpdateTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
@@ -301,9 +301,9 @@ public class UpdateTrainee extends JFrame {
 
                         if (what.equals("Edit")) {
                             try {
-                                String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
-                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'");
+                                String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
                                 System.out.println(query);
+                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
