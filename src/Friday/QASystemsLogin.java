@@ -4,12 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class QASystemsLogin{
 
     public static void main(String[] args) {
 
         QASystems_databaseConnect.buildConnection();
+
 
             JFrame loginF = new JFrame();
             loginF.setLayout(new GridLayout(7, 1));
@@ -78,33 +81,34 @@ public class QASystemsLogin{
                                     JButton button;
                                     button = (JButton) e.getSource();
                                     String what = button.getText();
-                                    String userName, password;
-                                    userName = t1.getText();
-                                    password = t2.getText();
 
                                     if (what.equals("Login")) {
-                                        if (userName.equals("ADMIN")) {
-                                            if (password.equals("123")) {
-                                                new QASystemsAdmin();
+                                        String searchAdmin = "SELECT Username FROM admins";
+                                        String searchPass = "SELECT Passkey FROM admins";
+                                        try {
+                                            ResultSet s = QASystems_databaseConnect.stat.executeQuery(searchAdmin);
+                                            ResultSet d = QASystems_databaseConnect.stat.executeQuery(searchPass);
+                                        while (s.next() && d.next()){
+                                            if(t1.getText() == searchAdmin && t2.getText() == searchPass){
+                                                while (d.next()){
+                                                    if(t2.getText() == searchPass){
+                                                        System.out.println("Correct password");
+                                                        new QASystemsAdmin();
+                                                    }
+                                                }
                                             }
                                         }
-                                          else if (userName.equals("USER")) {
-                                               if (password.equals("123")) {
-                                                   System.out.println("login user");
-                                                   new QASystemsUser();
-                                               }
-                                           }
-                                    } else
-                                        {
-                                        System.out.println("Incorrect Username or Password");
+                                        }
+                                        catch (SQLException e1) {
+                                            e1.printStackTrace();
                                         }
 
+                                    }
 
-                                        }
 
                                 }
 
-
+                            }
                         );
                     }
         }

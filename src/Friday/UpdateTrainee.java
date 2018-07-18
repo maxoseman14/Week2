@@ -200,7 +200,6 @@ public class UpdateTrainee extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
 
-                        QASystems_databaseConnect.buildConnection();
 
                         JButton button;
                         button = (JButton) e.getSource();

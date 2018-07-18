@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class ViewTrainer extends JFrame {
 
     static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12;
-    static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, update_Trainer,
+    static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, view_Trainer,
             trainerID, firstName, lastName, email, gender;
     static JTextField trainerText, firstText, lastText, emailText, genderText;
     static JButton search;
@@ -47,7 +47,7 @@ public class ViewTrainer extends JFrame {
         l9 = new JLabel(" ");
         l10 = new JLabel(" ");
         l11 = new JLabel(" ");
-        update_Trainer = new JLabel("Update Trainer");
+        view_Trainer = new JLabel("View Trainer");
         trainerID = new JLabel("Trainer ID");
         firstName = new JLabel("First Name");
         lastName = new JLabel("Last Name");
@@ -58,12 +58,12 @@ public class ViewTrainer extends JFrame {
         firstText = new JTextField(10);
         lastText = new JTextField(10);
         emailText = new JTextField(15);
-        genderText = new JTextField(10);
+        genderText = new JTextField(1);
 
         search = new JButton("Search");
 
         p1.add(l1);
-        p1.add(update_Trainer);
+        p1.add(view_Trainer);
         p1.add(l2);
 
         p3.add(l3);
@@ -120,7 +120,7 @@ public class ViewTrainer extends JFrame {
                         if (what.equals("Search")) {
 
                             String search = "SELECT*FROM trainers WHERE Trainer_ID = '" + trainerText.getText() + "'";
-                            System.out.println("View Trainer" + search);
+                            System.out.println(search);
 
                             try {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
