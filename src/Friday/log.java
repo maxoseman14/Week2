@@ -28,8 +28,8 @@ public class log extends JFrame {
         clientID = new JLabel("Client ID");
         reports = new JLabel("View Trainees");
 
-        trainees = new JTextField();
-        clientText = new JTextField();
+        trainees = new JTextField(100);
+        clientText = new JTextField(20);
         trainees.setSize(400, 400);
 
         view = new JButton("View");
@@ -61,14 +61,17 @@ public class log extends JFrame {
                         button = (JButton) e.getSource();
                         String what = button.getText();
 
+                        String traineeIDs = "";
                         if(what.equals("View")){
-                            String view = "SELECT * FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
+                            String view = "SELECT Trainee_ID FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
                             System.out.println(view);
 
                             try{
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(view);
-                                while (s.next()){
-                                    log.trainees.setText(String.valueOf(s.getObject("Client_ID"));
+                                while (s.next()) {
+                                    traineeIDs += s.getObject("Trainee_ID") + " , ";
+                                    log.trainees.setText(traineeIDs);
+                                    System.out.println(traineeIDs);
                                 }
                                 } catch (SQLException e1) {
                                 e1.printStackTrace();
@@ -79,7 +82,7 @@ public class log extends JFrame {
                         }
                     }
         );
-        
+
 
     }
 

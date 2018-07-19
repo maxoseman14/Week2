@@ -12,27 +12,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
+            <state relative-caret-position="418">
               <caret line="108" column="41" lean-forward="false" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
               <folding>
                 <marker date="1532011047950" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
                 <marker date="1532011047950" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
                 <marker date="1532011047950" expanded="true" signature="3136:3171" ph="SELECT Usern... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Friday/log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-              <folding>
-                <marker date="1532012153369" expanded="true" signature="1590:1661" ph="SELECT * FRO... trainees" />
               </folding>
             </state>
           </provider>
@@ -53,6 +41,18 @@
                 <marker date="1531928812930" expanded="true" signature="10335:10493" ph="UPDATE train... " />
                 <marker date="1531928812930" expanded="true" signature="10335:10516" ph="UPDATE train... " />
                 <marker date="1531928812930" expanded="true" signature="10335:10727" ph="UPDATE train... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Friday/log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="71" column="84" lean-forward="true" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
+              <folding>
+                <marker date="1532015085718" expanded="true" signature="1643:1723" ph="SELECT Train... trainees" />
               </folding>
             </state>
           </provider>
@@ -289,12 +289,12 @@
       <updated>1531738904231</updated>
       <workItem from="1531813892253" duration="22451000" />
       <workItem from="1531900147826" duration="23066000" />
-      <workItem from="1531986885906" duration="23405000" />
+      <workItem from="1531986885906" duration="26354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68922000" />
+    <option name="totallyTimeSpent" value="71871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -558,18 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="108" column="41" lean-forward="false" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-          <folding>
-            <marker date="1532011047950" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
-            <marker date="1532011047950" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
-            <marker date="1532011047950" expanded="true" signature="3136:3171" ph="SELECT Usern... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -590,10 +578,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="396">
+          <caret line="71" column="84" lean-forward="true" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
           <folding>
-            <marker date="1532012153369" expanded="true" signature="1590:1661" ph="SELECT * FRO... trainees" />
+            <marker date="1532015085718" expanded="true" signature="1643:1723" ph="SELECT Train... trainees" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="108" column="41" lean-forward="false" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+          <folding>
+            <marker date="1532011047950" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
+            <marker date="1532011047950" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
+            <marker date="1532011047950" expanded="true" signature="3136:3171" ph="SELECT Usern... users" />
           </folding>
         </state>
       </provider>
