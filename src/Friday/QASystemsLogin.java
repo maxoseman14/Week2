@@ -84,44 +84,35 @@ public class QASystemsLogin {
 
                         if (what.equals("Login")) {
 
+                            String username = t1.getText();
+                            String password = t2.getText();
+
                             try {
-
-                                ResultSet s = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM admins");
-
+                                ResultSet s = QASystems_databaseConnect.stat.executeQuery("SELECT Username, PassKey FROM admins");
                                 if (s.next() == true) {
-
-                                    String username = t1.getText();
-                                    String password = t2.getText();
-
-                                    if (username.equals(s.getString("Username"))) {
-                                        if (password.equals(s.getString("PassKey"))) {
-                                            new QASystemsAdmin();
-                                        }
-                                    } else if (s.next() == false) {
-                                        try {
-                                            ResultSet d = QASystems_databaseConnect.stat.executeQuery("SELECT Username, PassKey FROM users ");
+                                    if (username.equals(s.getString("Username")) && password.equals(s.getString("PassKey"))) {
+                                        new QASystemsAdmin();
+                                    } else {
+                                        new Invalid_Details();
+                                    }
+                                }
+                                else if (s.next() == false) {
+                                    try {
+                                        ResultSet d = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM users ");
                                             if (d.next() == true) {
-                                                if (username.equals(d.getString("Username"))) {
-                                                    if (password.equals(d.getString("Passkey"))) {
-                                                        new QASystemsUser();
-                                                    }
+                                                if (username.equals(d.getString("Username")) && password.equals(d.getString("Passkey"))) {
+                                                    new QASystemsUser();
                                                 } else {
                                                     new Invalid_Details();
                                                 }
                                             }
-
                                         } catch (SQLException e1) {
                                             e1.printStackTrace();
-                                            System.out.println(e1);
                                         }
                                     }
-                                }
-                            } catch (SQLException e1) {
-                                e1.printStackTrace();
-                                System.out.println(e1);
-
+                            } catch (SQLException e2) {
+                                e2.printStackTrace();
                             }
-
                         }
                     }
                 }

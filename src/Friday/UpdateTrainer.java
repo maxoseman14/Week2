@@ -123,12 +123,14 @@ public class UpdateTrainer extends JFrame {
 
                             try {
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(search);
-                                while (s.next()) {
+                                if (s.next() == true) {
                                     UpdateTrainer.trainerText.setText(String.valueOf(s.getObject("Trainer_ID")));
                                     UpdateTrainer.firstText.setText(String.valueOf(s.getObject("First_Name")));
                                     UpdateTrainer.lastText.setText(String.valueOf(s.getObject("Last_Name")));
                                     UpdateTrainer.emailText.setText(String.valueOf(s.getObject("Email")));
                                     UpdateTrainer.genderText.setText(String.valueOf(s.getObject("Gender")));
+                                } else {
+                                    new Invalid_Details();
                                 }
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
