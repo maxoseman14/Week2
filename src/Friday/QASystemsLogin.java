@@ -93,12 +93,8 @@ public class QASystemsLogin {
                                     if (username.equals(s.getString("Username")) && password.equals(s.getString("PassKey"))) {
                                         new QASystemsAdmin();
                                     } else {
-                                        new Invalid_Details();
-                                    }
-                                }
-                                else if (s.next() == false) {
-                                    try {
-                                        ResultSet d = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM users ");
+                                        try {
+                                            ResultSet d = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM users ");
                                             if (d.next() == true) {
                                                 if (username.equals(d.getString("Username")) && password.equals(d.getString("Passkey"))) {
                                                     new QASystemsUser();
@@ -110,6 +106,7 @@ public class QASystemsLogin {
                                             e1.printStackTrace();
                                         }
                                     }
+                                }
                             } catch (SQLException e2) {
                                 e2.printStackTrace();
                             }
