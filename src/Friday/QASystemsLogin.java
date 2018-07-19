@@ -82,23 +82,27 @@ public class QASystemsLogin{
                                     button = (JButton) e.getSource();
                                     String what = button.getText();
 
+
                                     if (what.equals("Login")) {
-                                        String searchAdmin = "SELECT Username FROM admins";
-                                        String searchPass = "SELECT Passkey FROM admins";
-                                        try {
-                                            ResultSet s = QASystems_databaseConnect.stat.executeQuery(searchAdmin);
-                                            ResultSet d = QASystems_databaseConnect.stat.executeQuery(searchPass);
-                                        while (s.next() && d.next()){
-                                            if(t1.getText() == searchAdmin && t2.getText() == searchPass){
-                                                while (d.next()){
-                                                    if(t2.getText() == searchPass){
-                                                        System.out.println("Correct password");
-                                                        new QASystemsAdmin();
-                                                    }
+
+                                    try {
+
+                                        ResultSet s = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM admins");
+
+                                        while (s.next()) {
+                                            String username = t1.getText();
+                                            String password = t2.getText();
+                                            if (username.equals(s.getString("Username"))) {
+                                                if (password.equals(s.getString("Passkey"))) {
+                                                    new QASystemsAdmin();
+                                                } else {
+                                                    System.out.println("Password not valid");
                                                 }
+                                            }else{
+                                                System.out.println("Username not valid");
                                             }
                                         }
-                                        }
+                                    }
                                         catch (SQLException e1) {
                                             e1.printStackTrace();
                                         }
