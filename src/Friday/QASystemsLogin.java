@@ -85,25 +85,28 @@ public class QASystemsLogin{
 
                                     if (what.equals("Login")) {
 
-                                    try {
+                                        try {
 
-                                        ResultSet s = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM admins");
+                                            ResultSet s = QASystems_databaseConnect.stat.executeQuery("SELECT Username, Passkey FROM admins AND users");
 
-                                        while (s.next()) {
-                                            String username = t1.getText();
-                                            String password = t2.getText();
-                                            if (username.equals(s.getString("Username"))) {
-                                                if (password.equals(s.getString("Passkey"))) {
-                                                    new QASystemsAdmin();
-                                                } else {
-                                                    System.out.println("Password not valid");
+                                            while (s.next()) {
+                                                String adminUsername = t1.getText();
+                                                String adminPassword = t2.getText();
+                                                String userUsername = t1.getText();
+                                                String userPassword = t2.getText();
+
+                                                if (adminUsername.equals(s.getString("Username"))) {
+                                                    if (adminPassword.equals(s.getString("Passkey"))) {
+                                                        new QASystemsAdmin();
+                                                    }
+                                                } else if (userUsername.equals(s.getString("Username"))) {
+                                                    if (userPassword.equals(s.getString("Passkey"))) {
+                                                        new QASystemsUser();
+                                                    }
+                                                }else{ new Invalid_Details();
                                                 }
-                                            }else{
-                                                System.out.println("Username not valid");
                                             }
-                                        }
-                                    }
-                                        catch (SQLException e1) {
+                                        } catch (SQLException e1) {
                                             e1.printStackTrace();
                                         }
 

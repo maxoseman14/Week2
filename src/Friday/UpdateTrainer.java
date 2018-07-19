@@ -54,8 +54,8 @@ public class UpdateTrainer extends JFrame {
         trainerText = new JTextField(10);
         firstText = new JTextField(10);
         lastText = new JTextField(10);
-        emailText = new JTextField(10);
-        genderText = new JTextField(10);
+        emailText = new JTextField(20);
+        genderText = new JTextField(1);
 
         search = new JButton("Search");
         save = new JButton("Save");

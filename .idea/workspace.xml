@@ -12,25 +12,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="97" column="56" lean-forward="false" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+            <state relative-caret-position="456">
+              <caret line="105" column="77" lean-forward="false" selection-start-line="105" selection-start-column="77" selection-end-line="105" selection-end-column="77" />
               <folding>
-                <marker date="1531991456667" expanded="true" signature="2623:2659" ph="SELECT Usern... admins" />
+                <marker date="1531996887011" expanded="true" signature="2631:2667" ph="SELECT Usern... admins" />
+                <marker date="1531996887011" expanded="true" signature="2631:2677" ph="SELECT Usern... admins" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invalid_Details.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Friday/Invalid_Details.java">
+      <file leaf-file-name="UpdateTrainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="-396">
+              <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1531993161836" expanded="true" signature="3308:3351" ph="SELECT * FRO... trainers" />
+                <marker date="1531993161836" expanded="true" signature="3308:3381" ph="SELECT * FRO... trainers" />
+                <marker date="1531993161836" expanded="true" signature="4920:5031" ph="DELETE FROM " />
+                <marker date="1531993161836" expanded="true" signature="6051:6119" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6141" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6149" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6207" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6232" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6236" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6263" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6264" ph="INSERT INTO trainers... " />
+                <marker date="1531993161836" expanded="true" signature="6051:6269" ph="INSERT INTO clients... " />
+                <marker date="1531993161836" expanded="true" signature="6999:7092" ph="UPDATE train... " />
+                <marker date="1531993161836" expanded="true" signature="6999:7095" ph="UPDATE train... " />
+                <marker date="1531993161836" expanded="true" signature="7094:7095" ph="UPDATE train... " />
               </folding>
             </state>
           </provider>
@@ -39,34 +54,22 @@
       <file leaf-file-name="QASystemsAdmin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="-682">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateTrainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
+      <file leaf-file-name="log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Friday/log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="550">
+              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding>
-                <marker date="1531921740825" expanded="true" signature="3309:3352" ph="SELECT * FRO... trainers" />
-                <marker date="1531921740825" expanded="true" signature="3309:3382" ph="SELECT * FRO... trainers" />
-                <marker date="1531921740825" expanded="true" signature="4921:5032" ph="DELETE FROM " />
-                <marker date="1531921740825" expanded="true" signature="6052:6120" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6142" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6150" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6208" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6233" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6237" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6264" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6265" ph="INSERT INTO trainers... " />
-                <marker date="1531921740825" expanded="true" signature="6052:6270" ph="INSERT INTO clients... " />
-                <marker date="1531921740825" expanded="true" signature="7000:7093" ph="UPDATE train... " />
-                <marker date="1531921740825" expanded="true" signature="7000:7096" ph="UPDATE train... " />
-                <marker date="1531921740825" expanded="true" signature="7095:7096" ph="UPDATE train... " />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,13 +99,14 @@
         <option value="$PROJECT_DIR$/src/Friday/ViewTrainee.java" />
         <option value="$PROJECT_DIR$/src/Friday/QASystems_databaseConnect.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateClient.java" />
-        <option value="$PROJECT_DIR$/src/Friday/QASystemsAdmin.java" />
-        <option value="$PROJECT_DIR$/src/Friday/UpdateTrainer.java" />
         <option value="$PROJECT_DIR$/src/Friday/ViewTrainer.java" />
         <option value="$PROJECT_DIR$/src/Friday/ViewClient.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" />
-        <option value="$PROJECT_DIR$/src/Friday/QASystemsLogin.java" />
         <option value="$PROJECT_DIR$/src/Friday/Invalid_Details.java" />
+        <option value="$PROJECT_DIR$/src/Friday/UpdateTrainer.java" />
+        <option value="$PROJECT_DIR$/src/Friday/log.java" />
+        <option value="$PROJECT_DIR$/src/Friday/QASystemsAdmin.java" />
+        <option value="$PROJECT_DIR$/src/Friday/QASystemsLogin.java" />
       </list>
     </option>
   </component>
@@ -302,12 +306,12 @@
       <updated>1531738904231</updated>
       <workItem from="1531813892253" duration="22451000" />
       <workItem from="1531900147826" duration="23066000" />
-      <workItem from="1531986885906" duration="4080000" />
+      <workItem from="1531986885906" duration="8961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49597000" />
+    <option name="totallyTimeSpent" value="54478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -321,12 +325,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19782609" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19782609" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1391258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -358,7 +362,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1531991456667" expanded="true" signature="2623:2659" ph="SELECT Usern... admins" />
+            <marker date="1531996887011" expanded="true" signature="2631:2667" ph="SELECT Usern... admins" />
+            <marker date="1531996887011" expanded="true" signature="2631:2677" ph="SELECT Usern... admins" />
           </folding>
         </state>
       </provider>
@@ -368,21 +373,21 @@
         <state relative-caret-position="2838">
           <caret line="135" column="24" lean-forward="true" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
           <folding>
-            <marker date="1531921740825" expanded="true" signature="3309:3352" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="3309:3382" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="4921:5032" ph="DELETE FROM " />
-            <marker date="1531921740825" expanded="true" signature="6052:6120" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6142" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6150" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6208" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6233" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6237" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6264" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6265" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6270" ph="INSERT INTO clients... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7093" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7096" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7095:7096" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="3308:3351" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="3308:3381" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="4920:5031" ph="DELETE FROM " />
+            <marker date="1531993161836" expanded="true" signature="6051:6119" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6141" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6149" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6207" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6232" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6236" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6263" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6264" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6269" ph="INSERT INTO clients... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7092" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7095" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="7094:7095" ph="UPDATE train... " />
           </folding>
         </state>
       </provider>
@@ -405,7 +410,8 @@
         <state relative-caret-position="176">
           <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
-            <marker date="1531991456667" expanded="true" signature="2623:2659" ph="SELECT Usern... admins" />
+            <marker date="1531996887011" expanded="true" signature="2631:2667" ph="SELECT Usern... admins" />
+            <marker date="1531996887011" expanded="true" signature="2631:2677" ph="SELECT Usern... admins" />
           </folding>
         </state>
       </provider>
@@ -415,21 +421,21 @@
         <state relative-caret-position="3850">
           <caret line="180" column="148" lean-forward="false" selection-start-line="180" selection-start-column="148" selection-end-line="180" selection-end-column="148" />
           <folding>
-            <marker date="1531921740825" expanded="true" signature="3309:3352" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="3309:3382" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="4921:5032" ph="DELETE FROM " />
-            <marker date="1531921740825" expanded="true" signature="6052:6120" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6142" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6150" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6208" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6233" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6237" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6264" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6265" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6270" ph="INSERT INTO clients... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7093" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7096" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7095:7096" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="3308:3351" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="3308:3381" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="4920:5031" ph="DELETE FROM " />
+            <marker date="1531993161836" expanded="true" signature="6051:6119" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6141" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6149" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6207" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6232" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6236" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6263" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6264" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6269" ph="INSERT INTO clients... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7092" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7095" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="7094:7095" ph="UPDATE train... " />
           </folding>
         </state>
       </provider>
@@ -541,54 +547,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/Friday/Invalid_Details.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="97" column="56" lean-forward="false" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+        <state relative-caret-position="448">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
-            <marker date="1531991456667" expanded="true" signature="2623:2659" ph="SELECT Usern... admins" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="-396">
+          <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
-            <marker date="1531921740825" expanded="true" signature="3309:3352" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="3309:3382" ph="SELECT * FRO... trainers" />
-            <marker date="1531921740825" expanded="true" signature="4921:5032" ph="DELETE FROM " />
-            <marker date="1531921740825" expanded="true" signature="6052:6120" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6142" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6150" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6208" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6233" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6237" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6264" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6265" ph="INSERT INTO trainers... " />
-            <marker date="1531921740825" expanded="true" signature="6052:6270" ph="INSERT INTO clients... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7093" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7000:7096" ph="UPDATE train... " />
-            <marker date="1531921740825" expanded="true" signature="7095:7096" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="3308:3351" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="3308:3381" ph="SELECT * FRO... trainers" />
+            <marker date="1531993161836" expanded="true" signature="4920:5031" ph="DELETE FROM " />
+            <marker date="1531993161836" expanded="true" signature="6051:6119" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6141" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6149" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6207" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6232" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6236" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6263" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6264" ph="INSERT INTO trainers... " />
+            <marker date="1531993161836" expanded="true" signature="6051:6269" ph="INSERT INTO clients... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7092" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="6999:7095" ph="UPDATE train... " />
+            <marker date="1531993161836" expanded="true" signature="7094:7095" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="-682">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/Invalid_Details.java">
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="456">
+          <caret line="105" column="77" lean-forward="false" selection-start-line="105" selection-start-column="77" selection-end-line="105" selection-end-column="77" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1531996887011" expanded="true" signature="2631:2667" ph="SELECT Usern... admins" />
+            <marker date="1531996887011" expanded="true" signature="2631:2677" ph="SELECT Usern... admins" />
           </folding>
         </state>
       </provider>

@@ -7,15 +7,15 @@ import java.awt.event.ActionListener;
 
 public class QASystemsAdmin extends JFrame {
 
-    JPanel p1, p2, p3, p4, p5, p6, p7, p8;
-    JLabel ADMIN, l1, l2, l3, l4, l5, l6, l7, l8;
-    JButton updateTrainee, updateTrainer, updateClient;
+    JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10;
+    JLabel ADMIN, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10;
+    JButton updateTrainee, updateTrainer, updateClient, reports;
 
 
     public QASystemsAdmin () throws HeadlessException {
 
 
-        setLayout(new GridLayout(8, 1));
+        setLayout(new GridLayout(10, 1));
 
         p1 = new JPanel(new GridLayout(1, 3));
         p2 = new JPanel();
@@ -25,6 +25,8 @@ public class QASystemsAdmin extends JFrame {
         p6 = new JPanel();
         p7 = new JPanel(new GridLayout(1, 3));
         p8 = new JPanel();
+        p9 = new JPanel(new GridLayout(1 ,3));
+        p10 = new JPanel();
 
         ADMIN = new JLabel("Admin");
         l1 = new JLabel(" ");
@@ -35,11 +37,13 @@ public class QASystemsAdmin extends JFrame {
         l6 = new JLabel(" ");
         l7 = new JLabel(" ");
         l8 = new JLabel(" ");
-
+        l9 = new JLabel(" ");
+        l10 = new JLabel(" ");
 
         updateTrainee = new JButton("Update Trainee");
         updateTrainer = new JButton("Update Trainer");
         updateClient = new JButton("Update Client");
+        reports = new JButton("Reports");
 
         //Panel 1
         p1.add(l1);
@@ -61,6 +65,11 @@ public class QASystemsAdmin extends JFrame {
         p7.add(updateClient);
         p7.add(l8);
 
+        //Panel 9
+        p9.add(l9);
+        p9.add(reports);
+        p9.add(l10);
+
         add(p1);
         add(p2);
         add(p3);
@@ -69,6 +78,8 @@ public class QASystemsAdmin extends JFrame {
         add(p6);
         add(p7);
         add(p8);
+        add(p9);
+        add(p10);
 
         setVisible(true);
         setSize(400, 400);
@@ -92,7 +103,7 @@ public class QASystemsAdmin extends JFrame {
                 }
         );
 
-        updateTrainer.addActionListener((
+        updateTrainer.addActionListener(
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -107,10 +118,10 @@ public class QASystemsAdmin extends JFrame {
                         }
                     }
                 }
-        ));
+        );
 
 
-        updateClient.addActionListener((
+        updateClient.addActionListener(
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -125,7 +136,25 @@ public class QASystemsAdmin extends JFrame {
                         }
                     }
                 }
-        ));
+        );
+
+        reports.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Reports")){
+                            System.out.println("View Reports");
+                            new log();
+                        }
+
+                    }
+                }
+        );
 
     }
 }
