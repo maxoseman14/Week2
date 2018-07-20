@@ -9,11 +9,10 @@ import java.sql.SQLException;
 
 public class ViewTrainee extends JFrame{
 
-    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
-            p17, p18, p19, p20;
+    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
-            l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
+            l17, l18, trainee_ID, client_ID, first_name, last_name,
             gender, email, trainer_ID, update_QA;
 
     static JTextField id, firstName, lastName, emailText, trainer, client,
@@ -24,7 +23,7 @@ public class ViewTrainee extends JFrame{
     public ViewTrainee ()throws HeadlessException{
 
         setSize(400, 700);
-        setLayout(new GridLayout(20, 1));
+        setLayout(new GridLayout(16, 1));
 
         //JPanels
         p1 = new JPanel(new GridLayout(1, 3));
@@ -44,10 +43,8 @@ public class ViewTrainee extends JFrame{
         p15 = new JPanel(new GridLayout(1, 4));
         p16 = new JPanel();
 
-
-
         //JLabels
-        update_QA = new JLabel("Update QA Member");
+        update_QA = new JLabel("View Trainee");
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
         l3 = new JLabel(" ");
@@ -66,7 +63,7 @@ public class ViewTrainee extends JFrame{
         l16 = new JLabel(" ");
         l17 = new JLabel(" ");
         l18 = new JLabel(" ");
-        trainee_ID = new JLabel("QA ID ");
+        trainee_ID = new JLabel("Trainee ID ");
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
