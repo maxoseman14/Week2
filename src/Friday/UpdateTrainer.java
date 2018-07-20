@@ -13,10 +13,16 @@ import java.sql.SQLException;
 public class UpdateTrainer extends JFrame {
 
     static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13;
-    static JLabel l1, l2, l3, l4, l5, l6, l7, update_Trainer,
+
+    static JLabel l1, l2, l3, l4, l5, l6, update_Trainer,
     trainerID, firstName, lastName, email, gender;
+
     static JTextField trainerText, firstText, lastText, emailText, genderText;
+
     static JButton search, save, edit, delete;
+
+    static JComboBox genderbox;
+
 
     public UpdateTrainer () throws HeadlessException{
 
@@ -55,7 +61,9 @@ public class UpdateTrainer extends JFrame {
         firstText = new JTextField(10);
         lastText = new JTextField(10);
         emailText = new JTextField(20);
-        genderText = new JTextField(1);
+
+        String [] genders = {"M", "F"};
+        genderbox = new JComboBox(genders);
 
         search = new JButton("Search");
         save = new JButton("Save");
@@ -84,7 +92,7 @@ public class UpdateTrainer extends JFrame {
 
         p11.add(gender);
         p11.add(l6);
-        p11.add(genderText);
+        p11.add(genderbox);
 
         p13.add(save);
         p13.add(edit);
@@ -128,7 +136,7 @@ public class UpdateTrainer extends JFrame {
                                     UpdateTrainer.firstText.setText(String.valueOf(s.getObject("First_Name")));
                                     UpdateTrainer.lastText.setText(String.valueOf(s.getObject("Last_Name")));
                                     UpdateTrainer.emailText.setText(String.valueOf(s.getObject("Email")));
-                                    UpdateTrainer.genderText.setText(String.valueOf(s.getObject("Gender")));
+                                    UpdateTrainer.genderbox.setSelectedItem(String.valueOf(s.getObject("Gender")));
                                 } else {
                                     new Invalid_Details();
                                 }
@@ -176,9 +184,10 @@ public class UpdateTrainer extends JFrame {
 
                         if (what.equals("Save")){
                             try{
-                                String query = "INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() +"','" + emailText.getText() +"','"+ genderText.getText() +"'";
+                                String query = "INSERT INTO trainers VALUES(TrainerID('"+ genderbox.getSelectedItem() +"','"+ firstText.getText() +"'),'"+ firstText.getText() +"','" + lastText.getText() +"','" + emailText.getText() +"','"+ genderbox.getSelectedItem() +"'";
                                 System.out.println(query);
-                                QASystems_databaseConnect.stat.execute("INSERT INTO trainers VALUES(TrainerID('"+ genderText.getText() +"','"+ firstText.getText() + "'),'"+ firstText.getText() +"','" + lastText.getText() + "', '" + emailText.getText() +"','"+ genderText.getText() +"')");
+                                QASystems_databaseConnect.stat.execute("INSERT INTO trainers VALUES(TrainerID('"+ genderbox.getSelectedItem()
+                                        +"','"+ firstText.getText() + "'),'"+ firstText.getText() +"','" + lastText.getText() + "', '" + emailText.getText() +"','"+ genderbox.getSelectedItem() +"')");
 
                             } catch (SQLException e1) {
                                 e1.printStackTrace();

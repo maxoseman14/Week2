@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class UpdateTrainee extends JFrame {
 
     static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
-            p17, p18, exceeded;
+            p17, p18;
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
             l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
@@ -202,7 +202,7 @@ public class UpdateTrainee extends JFrame {
                                     UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
                                     UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
                                     UpdateTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
-                                    UpdateTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
+                                    UpdateTrainee.genderbox.setSelectedItem(String.valueOf(s.getObject("Gender")));
 
                                 }
                             } catch (Exception t) {
@@ -254,14 +254,14 @@ public class UpdateTrainee extends JFrame {
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
-                        int firstlength = firstName.getColumns(), lastlength = lastName.getColumns(), emaillength = emailText.getColumns();
+                       // int firstlength = firstName.getColumns(), lastlength = lastName.getColumns(), emaillength = emailText.getColumns();
 
                         if (what.equals("Save")){
                             try {
                                 String query = "INSERT INTO trainees VALUES(TraineeID('" + genderbox.getSelectedItem() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + genderbox.getSelectedItem() + "')";
                                 System.out.println(query);
                                 QASystems_databaseConnect.stat.execute(query);
-                                if (firstName.getText().length() > firstlength){
+                               /* if (firstName.getText().length() > firstlength){
                                     new Invalid_Details();
                                 }
                                 if (lastName.getText().length() > lastlength){
@@ -269,7 +269,7 @@ public class UpdateTrainee extends JFrame {
                                 }
                                 if (emailText.getText().length() > emaillength){
                                     new Invalid_Details();
-                                }
+                               } */
 
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
@@ -296,7 +296,7 @@ public class UpdateTrainee extends JFrame {
                             try {
                                 String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
                                 System.out.println(query);
-                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'");
+                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderbox.getSelectedItem() + "' WHERE Trainee_ID = '" + id.getText() + "'");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
