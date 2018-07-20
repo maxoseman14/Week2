@@ -14,9 +14,9 @@ public class ViewTrainee extends JFrame{
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
             l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
-            gender, email, trainer_ID, start, end, update_QA;
+            gender, email, trainer_ID, update_QA;
 
-    static JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
+    static JTextField id, firstName, lastName, emailText, trainer, client,
             genderText;
 
     static JButton search;
@@ -43,10 +43,6 @@ public class ViewTrainee extends JFrame{
         p14 = new JPanel();
         p15 = new JPanel(new GridLayout(1, 4));
         p16 = new JPanel();
-        p17 = new JPanel(new GridLayout(1, 4));
-        p18 = new JPanel();
-        p19 = new JPanel(new GridLayout(1, 4));
-        p20 = new JPanel();
 
 
 
@@ -70,18 +66,12 @@ public class ViewTrainee extends JFrame{
         l16 = new JLabel(" ");
         l17 = new JLabel(" ");
         l18 = new JLabel(" ");
-        l19 = new JLabel(" ");
-        l20 = new JLabel(" ");
-        l21 = new JLabel(" ");
-        l22 = new JLabel(" ");
         trainee_ID = new JLabel("QA ID ");
         first_name = new JLabel("First Name");
         last_name = new JLabel("Last Name");
         email = new JLabel("Email ");
         trainer_ID = new JLabel("Trainer ID ");
         client_ID = new JLabel("Client ID");
-        start = new JLabel("Start Date");
-        end = new JLabel("End Date ");
         gender = new JLabel("Gender");
 
         //JTextfields
@@ -91,8 +81,6 @@ public class ViewTrainee extends JFrame{
         emailText = new JTextField(15);
         trainer = new JTextField(10);
         client = new JTextField(10);
-        startText = new JTextField(10);
-        endText = new JTextField(10);
         genderText = new JTextField(5);
 
         //JButton
@@ -137,19 +125,9 @@ public class ViewTrainee extends JFrame{
         p13.add(l16);
 
         p15.add(l17);
-        p15.add(start);
-        p15.add(startText);
+        p15.add(gender);
+        p15.add(genderText);
         p15.add(l18);
-
-        p17.add(l19);
-        p17.add(end);
-        p17.add(endText);
-        p17.add(l20);
-
-        p19.add(l21);
-        p19.add(gender);
-        p19.add(genderText);
-        p19.add(l22);
 
         //add JPanels to JFrame
 
@@ -169,10 +147,6 @@ public class ViewTrainee extends JFrame{
         add(p14);
         add(p15);
         add(p16);
-        add(p17);
-        add(p18);
-        add(p19);
-        add(p20);
 
         setVisible(true);
 
@@ -202,8 +176,6 @@ public class ViewTrainee extends JFrame{
                                     ViewTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
                                     ViewTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
                                     ViewTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
-                                    ViewTrainee.startText.setText(String.valueOf(s.getObject("Start_Date")));
-                                    ViewTrainee.endText.setText(String.valueOf(s.getObject("End_Date")));
                                     ViewTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
                                 }
                             } catch (SQLException e1) {

@@ -15,7 +15,7 @@
       <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
+            <state relative-caret-position="2156">
               <caret line="106" column="41" lean-forward="false" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
               <folding>
                 <marker date="1532015823984" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
@@ -26,30 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Friday/UpdateClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="202" column="101" lean-forward="false" selection-start-line="202" selection-start-column="101" selection-end-line="202" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1532082344806" expanded="true" signature="5353:5499" ph="INSERT INTO clients... " />
-                <marker date="1532082344806" expanded="true" signature="5353:5529" ph="INSERT INTO clients... " />
-                <marker date="1532082344806" expanded="true" signature="5353:5553" ph="INSERT INTO clients... " />
-                <marker date="1532082344806" expanded="true" signature="5353:5586" ph="INSERT INTO clients... " />
-                <marker date="1532082344806" expanded="true" signature="5353:5588" ph="INSERT INTO clients... " />
-                <marker date="1532082344806" expanded="true" signature="6299:6369" ph="SELECT * FRO... trainees" />
-                <marker date="1532082344806" expanded="true" signature="7963:8071" ph="DELETE FROM " />
-                <marker date="1532082344806" expanded="true" signature="8806:8906" ph="UPDATE clien... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UpdateTrainee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924">
+            <state relative-caret-position="2464">
               <caret line="227" column="57" lean-forward="true" selection-start-line="227" selection-start-column="57" selection-end-line="227" selection-end-column="57" />
               <folding>
                 <marker date="1532074696128" expanded="true" signature="5105:5168" ph="SELECT * FRO... trainees" />
@@ -66,27 +46,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateTrainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
+      <file leaf-file-name="ViewTrainee.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Friday/ViewTrainee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="178" column="259" lean-forward="false" selection-start-line="178" selection-start-column="259" selection-end-line="178" selection-end-column="259" />
+            <state relative-caret-position="440">
+              <caret line="148" column="17" lean-forward="false" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
               <folding>
-                <marker date="1532008566004" expanded="true" signature="3308:3351" ph="SELECT * FRO... trainers" />
-                <marker date="1532008566004" expanded="true" signature="3308:3381" ph="SELECT * FRO... trainers" />
-                <marker date="1532008566004" expanded="true" signature="5025:5136" ph="DELETE FROM " />
-                <marker date="1532008566004" expanded="true" signature="6156:6224" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6246" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6254" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6312" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6337" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6341" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6368" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6369" ph="INSERT INTO trainers... " />
-                <marker date="1532008566004" expanded="true" signature="6156:6374" ph="INSERT INTO clients... " />
-                <marker date="1532008566004" expanded="true" signature="7104:7197" ph="UPDATE train... " />
-                <marker date="1532008566004" expanded="true" signature="7104:7200" ph="UPDATE train... " />
-                <marker date="1532008566004" expanded="true" signature="7199:7200" ph="UPDATE train... " />
+                <marker date="1532083772685" expanded="true" signature="4446:4508" ph="SELECT FROM trainees... " />
               </folding>
             </state>
           </provider>
@@ -113,7 +79,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Friday/QASystemsUser.java" />
-        <option value="$PROJECT_DIR$/src/Friday/ViewTrainee.java" />
         <option value="$PROJECT_DIR$/src/Friday/QASystems_databaseConnect.java" />
         <option value="$PROJECT_DIR$/src/Friday/ViewTrainer.java" />
         <option value="$PROJECT_DIR$/src/Friday/ViewClient.java" />
@@ -126,6 +91,7 @@
         <option value="$PROJECT_DIR$/src/Friday/trainerlog.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateClient.java" />
+        <option value="$PROJECT_DIR$/src/Friday/ViewTrainee.java" />
       </list>
     </option>
   </component>
@@ -327,12 +293,12 @@
       <workItem from="1531900147826" duration="23066000" />
       <workItem from="1531986885906" duration="28672000" />
       <workItem from="1532072833713" duration="4927000" />
-      <workItem from="1532080441306" duration="1486000" />
+      <workItem from="1532080441306" duration="2909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80602000" />
+    <option name="totallyTimeSpent" value="82025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -414,14 +380,14 @@
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532082344806" expanded="true" signature="5353:5499" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5529" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5553" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5586" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5588" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="6299:6369" ph="SELECT * FRO... trainees" />
-            <marker date="1532082344806" expanded="true" signature="7963:8071" ph="DELETE FROM " />
-            <marker date="1532082344806" expanded="true" signature="8806:8906" ph="UPDATE clien... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5753" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5755" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="6466:6536" ph="SELECT * FRO... trainees" />
+            <marker date="1532082977619" expanded="true" signature="8130:8238" ph="DELETE FROM " />
+            <marker date="1532082977619" expanded="true" signature="8973:9073" ph="UPDATE clien... " />
           </folding>
         </state>
       </provider>
@@ -443,7 +409,6 @@
         <state relative-caret-position="132">
           <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1532016331491" expanded="true" signature="1655:1735" ph="SELECT Train... trainees" />
           </folding>
         </state>
@@ -520,14 +485,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532082344806" expanded="true" signature="5353:5499" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5529" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5553" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5586" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5588" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="6299:6369" ph="SELECT * FRO... trainees" />
-            <marker date="1532082344806" expanded="true" signature="7963:8071" ph="DELETE FROM " />
-            <marker date="1532082344806" expanded="true" signature="8806:8906" ph="UPDATE clien... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5753" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5755" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="6466:6536" ph="SELECT * FRO... trainees" />
+            <marker date="1532082977619" expanded="true" signature="8130:8238" ph="DELETE FROM " />
+            <marker date="1532082977619" expanded="true" signature="8973:9073" ph="UPDATE clien... " />
           </folding>
         </state>
       </provider>
@@ -596,17 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/ViewTrainee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1531831369920" expanded="true" signature="5175:5237" ph="SELECT FROM trainees... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/ViewTrainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1158">
@@ -666,31 +620,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/clientlog.java">
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="-4132">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1532016331491" expanded="true" signature="1655:1735" ph="SELECT Train... trainees" />
+            <element signature="imports" expanded="true" />
+            <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5753" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="5520:5755" ph="INSERT INTO clients... " />
+            <marker date="1532082977619" expanded="true" signature="6466:6536" ph="SELECT * FRO... trainees" />
+            <marker date="1532082977619" expanded="true" signature="8130:8238" ph="DELETE FROM " />
+            <marker date="1532082977619" expanded="true" signature="8973:9073" ph="UPDATE clien... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+    <entry file="file://$PROJECT_DIR$/src/Friday/clientlog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="227" column="57" lean-forward="true" selection-start-line="227" selection-start-column="57" selection-end-line="227" selection-end-column="57" />
+        <state relative-caret-position="-792">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <marker date="1532074696128" expanded="true" signature="5105:5168" ph="SELECT * FRO... trainees" />
-            <marker date="1532074696128" expanded="true" signature="6996:7057" ph="DELETE FROM " />
-            <marker date="1532074696128" expanded="true" signature="7914:8209" ph="INSERT INTO trainees... " />
-            <marker date="1532074696128" expanded="true" signature="7914:8210" ph="INSERT INTO trainees... " />
-            <marker date="1532074696128" expanded="true" signature="9476:9510" ph="UPDATE train... " />
-            <marker date="1532074696128" expanded="true" signature="9476:9620" ph="UPDATE train... " />
-            <marker date="1532074696128" expanded="true" signature="9476:9634" ph="UPDATE train... " />
-            <marker date="1532074696128" expanded="true" signature="9476:9657" ph="UPDATE train... " />
-            <marker date="1532074696128" expanded="true" signature="9476:9784" ph="UPDATE train... " />
+            <marker date="1532016331491" expanded="true" signature="1655:1735" ph="SELECT Train... trainees" />
           </folding>
         </state>
       </provider>
@@ -721,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="2156">
           <caret line="106" column="41" lean-forward="false" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
           <folding>
             <marker date="1532015823984" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
@@ -731,20 +684,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateClient.java">
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="202" column="101" lean-forward="false" selection-start-line="202" selection-start-column="101" selection-end-line="202" selection-end-column="101" />
+        <state relative-caret-position="2464">
+          <caret line="227" column="57" lean-forward="true" selection-start-line="227" selection-start-column="57" selection-end-line="227" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1532082344806" expanded="true" signature="5353:5499" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5529" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5553" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5586" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="5353:5588" ph="INSERT INTO clients... " />
-            <marker date="1532082344806" expanded="true" signature="6299:6369" ph="SELECT * FRO... trainees" />
-            <marker date="1532082344806" expanded="true" signature="7963:8071" ph="DELETE FROM " />
-            <marker date="1532082344806" expanded="true" signature="8806:8906" ph="UPDATE clien... " />
+            <marker date="1532074696128" expanded="true" signature="5105:5168" ph="SELECT * FRO... trainees" />
+            <marker date="1532074696128" expanded="true" signature="6996:7057" ph="DELETE FROM " />
+            <marker date="1532074696128" expanded="true" signature="7914:8209" ph="INSERT INTO trainees... " />
+            <marker date="1532074696128" expanded="true" signature="7914:8210" ph="INSERT INTO trainees... " />
+            <marker date="1532074696128" expanded="true" signature="9476:9510" ph="UPDATE train... " />
+            <marker date="1532074696128" expanded="true" signature="9476:9620" ph="UPDATE train... " />
+            <marker date="1532074696128" expanded="true" signature="9476:9634" ph="UPDATE train... " />
+            <marker date="1532074696128" expanded="true" signature="9476:9657" ph="UPDATE train... " />
+            <marker date="1532074696128" expanded="true" signature="9476:9784" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/ViewTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="148" column="17" lean-forward="false" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+          <folding>
+            <marker date="1532083772685" expanded="true" signature="4446:4508" ph="SELECT FROM trainees... " />
           </folding>
         </state>
       </provider>

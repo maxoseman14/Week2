@@ -22,7 +22,7 @@ public class UpdateClient extends JFrame {
     public UpdateClient() throws HeadlessException {
 
         setSize(400, 500);
-        setLayout(new GridLayout(11, 1));
+        setLayout(new GridLayout(16, 1));
 
         p1 = new JPanel(new GridLayout(1, 3));
         p2 = new JPanel();
@@ -49,7 +49,6 @@ public class UpdateClient extends JFrame {
         l6 = new JLabel(" ");
         l7 = new JLabel(" ");
 
-
         update_client = new JLabel("Update Client ");
         client_ID = new JLabel("Client ID");
         name = new JLabel("Name");
@@ -62,6 +61,8 @@ public class UpdateClient extends JFrame {
         nameText = new JTextField(10);
         emailText = new JTextField(20);
         sectorText = new JTextField(20);
+        startText = new JTextField(20);
+        endText = new JTextField(20);
 
         search = new JButton("Search");
         save = new JButton("Save");
@@ -80,20 +81,20 @@ public class UpdateClient extends JFrame {
         p5.add(l3);
         p5.add(nameText);
 
-        p7.add(start);
-        p7.add(l6);
-        p7.add(startText);
+        p7.add(email);
+        p7.add(l4);
+        p7.add(emailText);
 
-        p9.add(end);
-        p9.add(l7);
-        p9.add(endText);
+        p9.add(start);
+        p9.add(l5);
+        p9.add(startText);
 
-        p11.add(email);
-        p11.add(l4);
-        p11.add(emailText);
+        p11.add(end);
+        p11.add(l6);
+        p11.add(endText);
 
         p13.add(sector);
-        p13.add(l5);
+        p13.add(l7);
         p13.add(sectorText);
 
         p15.add(save);
@@ -111,6 +112,11 @@ public class UpdateClient extends JFrame {
         add(p9);
         add(p10);
         add(p11);
+        add(p12);
+        add(p13);
+        add(p14);
+        add(p15);
+        add(p16);
 
         setVisible(true);
 
