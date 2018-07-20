@@ -9,7 +9,7 @@ public class QASystemsAdmin extends JFrame {
 
     JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10;
     JLabel ADMIN, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10;
-    JButton updateTrainee, updateTrainer, updateClient, reports;
+    JButton updateTrainee, updateTrainer, updateClient, trainerReports, clientReports;
 
 
     public QASystemsAdmin () throws HeadlessException {
@@ -25,7 +25,7 @@ public class QASystemsAdmin extends JFrame {
         p6 = new JPanel();
         p7 = new JPanel(new GridLayout(1, 3));
         p8 = new JPanel();
-        p9 = new JPanel(new GridLayout(1 ,3));
+        p9 = new JPanel(new GridLayout(1 ,2));
         p10 = new JPanel();
 
         ADMIN = new JLabel("Admin");
@@ -43,7 +43,8 @@ public class QASystemsAdmin extends JFrame {
         updateTrainee = new JButton("Update Trainee");
         updateTrainer = new JButton("Update Trainer");
         updateClient = new JButton("Update Client");
-        reports = new JButton("Reports");
+        clientReports = new JButton("Client Reports");
+        trainerReports = new JButton("Trainer Reports");
 
         //Panel 1
         p1.add(l1);
@@ -66,9 +67,9 @@ public class QASystemsAdmin extends JFrame {
         p7.add(l8);
 
         //Panel 9
-        p9.add(l9);
-        p9.add(reports);
-        p9.add(l10);
+
+        p9.add(clientReports);
+        p9.add(trainerReports);
 
         add(p1);
         add(p2);
@@ -138,7 +139,7 @@ public class QASystemsAdmin extends JFrame {
                 }
         );
 
-        reports.addActionListener(
+        trainerReports.addActionListener(
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -147,9 +148,27 @@ public class QASystemsAdmin extends JFrame {
                         button = (JButton) e.getSource();
                         String what = button.getText();
 
-                        if (what.equals("Reports")){
-                            System.out.println("View Reports");
-                            new log();
+                        if (what.equals("Trainer Reports")){
+                            System.out.println("View Trainer Reports");
+                            new trainerlog();
+                        }
+
+                    }
+                }
+        );
+
+        clientReports.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        JButton button;
+                        button = (JButton) e.getSource();
+                        String what = button.getText();
+
+                        if (what.equals("Client Reports")){
+                            System.out.println("View Client Reports");
+                            new clientlog();
                         }
 
                     }

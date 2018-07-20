@@ -17,10 +17,12 @@ public class UpdateTrainee extends JFrame {
 
     static JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16,
             l17, l18, l19, l20, l21, l22, l23, trainee_ID, client_ID, first_name, last_name,
-            gender, email, trainer_ID, start, end, update_QA;
+            gender, email, trainer_ID, update_QA;
 
-    static JTextField id, firstName, lastName, emailText, startText, endText, trainer, client,
+    static JTextField id, firstName, lastName, emailText, trainer, client,
             genderText;
+
+    static JComboBox genderbox;
 
     static JButton save, edit, search, delete;
 
@@ -50,11 +52,6 @@ public class UpdateTrainee extends JFrame {
         p16 = new JPanel();
         p17 = new JPanel(new GridLayout(1, 4));
         p18 = new JPanel();
-        p19 = new JPanel(new GridLayout(1, 4));
-        p20 = new JPanel();
-        p21 = new JPanel(new GridLayout(1, 7));
-        p22 = new JPanel();
-
 
         //JLabels
         update_QA = new JLabel("Update QA Member");
@@ -87,8 +84,6 @@ public class UpdateTrainee extends JFrame {
         email = new JLabel("Email ");
         trainer_ID = new JLabel("Trainer ID");
         client_ID = new JLabel("Client ID");
-        start = new JLabel("Start Date");
-        end = new JLabel("End Date ");
         gender = new JLabel("Gender");
 
         //JTextfields
@@ -98,9 +93,10 @@ public class UpdateTrainee extends JFrame {
         emailText = new JTextField(15);
         trainer = new JTextField(10);
         client = new JTextField(10);
-        startText = new JTextField(10);
-        endText = new JTextField(10);
-        genderText = new JTextField(5);
+
+        //JCombobox
+        String [] genders = {"M", "F"};
+        genderbox = new JComboBox(genders);
 
         //JButtons
         search = new JButton("Search");
@@ -146,24 +142,14 @@ public class UpdateTrainee extends JFrame {
         p13.add(client);
         p13.add(l17);
 
-        p15.add(l18);
-        p15.add(start);
-        p15.add(startText);
-        p15.add(l19);
+        p15.add(l22);
+        p15.add(gender);
+        p15.add(genderbox);
+        p15.add(l23);
 
-        p17.add(l20);
-        p17.add(end);
-        p17.add(endText);
-        p17.add(l21);
-
-        p19.add(l22);
-        p19.add(gender);
-        p19.add(genderText);
-        p19.add(l23);
-
-        p21.add(save);
-        p21.add(edit);
-        p21.add(delete);
+        p17.add(save);
+        p17.add(edit);
+        p17.add(delete);
 
         //add JPanels to JFrame
         add(p1);
@@ -184,10 +170,6 @@ public class UpdateTrainee extends JFrame {
         add(p16);
         add(p17);
         add(p18);
-        add(p19);
-        add(p20);
-        add(p21);
-        add(p22);
 
         setVisible(true);
 
@@ -220,8 +202,6 @@ public class UpdateTrainee extends JFrame {
                                     UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
                                     UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
                                     UpdateTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
-                                    UpdateTrainee.startText.setText(String.valueOf(s.getObject("Start_Date")));
-                                    UpdateTrainee.endText.setText(String.valueOf(s.getObject("End_Date")));
                                     UpdateTrainee.genderText.setText(String.valueOf(s.getObject("Gender")));
 
                                 }
@@ -278,7 +258,7 @@ public class UpdateTrainee extends JFrame {
 
                         if (what.equals("Save")){
                             try {
-                                String query = "INSERT INTO trainees VALUES(TraineeID('" + genderText.getText() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + startText.getText() + "', '" + endText.getText() + "', '" + genderText.getText() + "')";
+                                String query = "INSERT INTO trainees VALUES(TraineeID('" + genderbox.getSelectedItem() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + genderbox.getSelectedItem() + "')";
                                 System.out.println(query);
                                 QASystems_databaseConnect.stat.execute(query);
                             } catch (SQLException e1) {
@@ -304,9 +284,9 @@ public class UpdateTrainee extends JFrame {
 
                         if (what.equals("Edit")) {
                             try {
-                                String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
+                                String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
                                 System.out.println(query);
-                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Start_Date = '" + startText.getText() + "', End_Date = '" + endText.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'");
+                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }

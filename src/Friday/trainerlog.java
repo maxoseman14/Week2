@@ -7,14 +7,14 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class log extends JFrame {
+public class trainerlog extends JFrame{
 
     static JPanel p1, p2 ,p3;
-    static JTextField trainees, clientText;
+    static JTextField trainees, trainerText;
     static JButton view;
-    static JLabel l1, l2, reports, clientID;
+    static JLabel l1, l2, reports, trainerID;
 
-    public log () throws HeadlessException {
+    public trainerlog () throws HeadlessException {
 
 
         setLayout(new GridLayout(3,1));
@@ -25,11 +25,11 @@ public class log extends JFrame {
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
-        clientID = new JLabel("Client ID");
+        trainerID = new JLabel("Trainer ID");
         reports = new JLabel("View Trainees");
 
         trainees = new JTextField(100);
-        clientText = new JTextField(20);
+        trainerText = new JTextField(20);
         trainees.setSize(400, 400);
 
         view = new JButton("View");
@@ -38,8 +38,8 @@ public class log extends JFrame {
         p1.add(reports);
         p1.add(l2);
 
-        p2.add(clientID);
-        p2.add(clientText);
+        p2.add(trainerID);
+        p2.add(trainerText);
         p2.add(view);
 
         p3.add(trainees);
@@ -60,27 +60,27 @@ public class log extends JFrame {
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
-
                         String traineeIDs = "";
+
                         if(what.equals("View")){
-                            String view = "SELECT Trainee_ID FROM trainees WHERE Client_ID = '" + clientText.getText() + "'";
+                            String view = "SELECT Trainee_ID FROM trainees WHERE Trainer_ID = '" + trainerText.getText() + "'";
                             System.out.println(view);
 
                             try{
                                 ResultSet s = QASystems_databaseConnect.stat.executeQuery(view);
                                 while (s.next()) {
                                     traineeIDs += s.getObject("Trainee_ID") + " , ";
-                                    log.trainees.setText(traineeIDs);
+                                    trainerlog.trainees.setText(traineeIDs);
                                     System.out.println(traineeIDs);
                                 }
-                                } catch (SQLException e1) {
+                            } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
 
                         }
 
-                        }
                     }
+                }
         );
 
 
