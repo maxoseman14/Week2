@@ -13,10 +13,11 @@ import java.util.Calendar;
 
 public class UpdateClient extends JFrame {
 
-    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11;
-    static JLabel l1, l2, l3, l4, l5, update_client, client_ID, name, email, sector;
-    static JTextField clientText, nameText, emailText, sectorText;
+    static JPanel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
+    static JLabel l1, l2, l3, l4, l5, l6, l7, update_client, client_ID, name, start, end, email, sector;
+    static JTextField clientText, nameText, emailText, sectorText, startText, endText;
     static JButton search, save, edit, delete;
+
 
     public UpdateClient() throws HeadlessException {
 
@@ -34,18 +35,28 @@ public class UpdateClient extends JFrame {
         p9 = new JPanel(new GridLayout(1, 3));
         p10 = new JPanel();
         p11 = new JPanel(new GridLayout(1, 3));
+        p12 = new JPanel();
+        p13 = new JPanel(new GridLayout(1,3));
+        p14 = new JPanel();
+        p15 = new JPanel(new GridLayout(1,3));
+        p16 = new JPanel();
 
         l1 = new JLabel(" ");
         l2 = new JLabel(" ");
         l3 = new JLabel(" ");
         l4 = new JLabel(" ");
         l5 = new JLabel(" ");
+        l6 = new JLabel(" ");
+        l7 = new JLabel(" ");
+
 
         update_client = new JLabel("Update Client ");
         client_ID = new JLabel("Client ID");
         name = new JLabel("Name");
         email = new JLabel("Email");
         sector = new JLabel("Sector");
+        start = new JLabel("Cohort Start");
+        end = new JLabel("Cohort End");
 
         clientText = new JTextField(10);
         nameText = new JTextField(10);
@@ -69,17 +80,25 @@ public class UpdateClient extends JFrame {
         p5.add(l3);
         p5.add(nameText);
 
-        p7.add(email);
-        p7.add(l4);
-        p7.add(emailText);
+        p7.add(start);
+        p7.add(l6);
+        p7.add(startText);
 
-        p9.add(sector);
-        p9.add(l5);
-        p9.add(sectorText);
+        p9.add(end);
+        p9.add(l7);
+        p9.add(endText);
 
-        p11.add(save);
-        p11.add(edit);
-        p11.add(delete);
+        p11.add(email);
+        p11.add(l4);
+        p11.add(emailText);
+
+        p13.add(sector);
+        p13.add(l5);
+        p13.add(sectorText);
+
+        p15.add(save);
+        p15.add(edit);
+        p15.add(delete);
 
         add(p1);
         add(p2);
@@ -151,7 +170,7 @@ public class UpdateClient extends JFrame {
                             clientID = nameText.getText().substring(0,3) + currentMonth + now.get(Calendar.YEAR);
                             try {
                                 QASystems_databaseConnect.stat.executeUpdate("INSERT INTO clients VALUES('" + clientID + "','" + nameText.getText() + "','"
-                                        + emailText.getText() + "','" + sectorText.getText() + "')");
+                                        + emailText.getText() + "','" + startText.getText() + "','" + endText.getText() + "', '" + sectorText.getText() + "')");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }
@@ -180,6 +199,8 @@ public class UpdateClient extends JFrame {
                                 while (s.next()) {
                                     UpdateClient.nameText.setText(String.valueOf(s.getObject("Name")));
                                     UpdateClient.emailText.setText(String.valueOf(s.getObject("Email")));
+                                    UpdateClient.startText.setText(String.valueOf(s.getObject("Start_Date")));
+                                    UpdateClient.endText.setText(String.valueOf(s.getObject("End_Date")));
                                     UpdateClient.sectorText.setText(String.valueOf(s.getObject("Sector")));
                                 }
                             } catch (SQLException e1) {
@@ -230,11 +251,13 @@ public class UpdateClient extends JFrame {
                         String what = button.getText();
                         if (what.equals("Edit")) {
                             try {
-                                PreparedStatement ps = QASystems_databaseConnect.con.prepareStatement("UPDATE clients SET `Name`=?, `Email`=?, `Sector`=? WHERE `Client_ID`=?;");
+                                PreparedStatement ps = QASystems_databaseConnect.con.prepareStatement("UPDATE clients SET `Name`=?, `Email`=?, `Start_Date`=?, `End_Date`=?, `Sector`=? WHERE `Client_ID`=?");
                                 ps.setString(1,nameText.getText());
                                 ps.setString(2,emailText.getText());
-                                ps.setString(3,sectorText.getText());
-                                ps.setString(4,clientText.getText());
+                                ps.setString(3,startText.getText());
+                                ps.setString(4,endText.getText());
+                                ps.setString(5,sectorText.getText());
+                                ps.setString(6,clientText.getText());
                                 System.out.println(ps);
                                 ps.executeUpdate();
                             } catch (SQLException e1) {
