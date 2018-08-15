@@ -22,7 +22,7 @@ public class UpdateTrainee extends JFrame {
     static JTextField id, firstName, lastName, emailText, trainer, client,
             genderText;
 
-    static JComboBox genderbox;
+    static JComboBox genderbox, trainerbox;
 
     static JButton save, edit, search, delete;
 
@@ -91,12 +91,27 @@ public class UpdateTrainee extends JFrame {
         firstName = new JTextField(10);
         lastName = new JTextField(10);
         emailText = new JTextField(15);
-        trainer = new JTextField(10);
         client = new JTextField(10);
+
 
         //JCombobox
         String [] genders = {"M", "F"};
         genderbox = new JComboBox(genders);
+
+
+        //trainer JCombobox
+        try{
+            String trainerSearch = "SELECT Trainer_ID FROM trainers";
+            ResultSet s = QASystems_databaseConnect.stat.executeQuery(trainerSearch);
+            while (s.next()){
+                String [] trainers = {};
+
+            }
+            trainerbox = new JComboBox();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
         //JButtons
         search = new JButton("Search");
@@ -134,7 +149,7 @@ public class UpdateTrainee extends JFrame {
 
         p11.add(l14);
         p11.add(trainer_ID);
-        p11.add(trainer);
+        p11.add(trainerbox);
         p11.add(l15);
 
         p13.add(l16);
@@ -200,7 +215,7 @@ public class UpdateTrainee extends JFrame {
                                     UpdateTrainee.firstName.setText(String.valueOf(s.getObject("First_Name")));
                                     UpdateTrainee.lastName.setText(String.valueOf(s.getObject("Last_Name")));
                                     UpdateTrainee.emailText.setText(String.valueOf(s.getObject("Email")));
-                                    UpdateTrainee.trainer.setText(String.valueOf(s.getObject("Trainer_ID")));
+                                    UpdateTrainee.trainerbox.setSelectedItem(String.valueOf(s.getObject("Trainer_ID")));
                                     UpdateTrainee.client.setText(String.valueOf(s.getObject("Client_ID")));
                                     UpdateTrainee.genderbox.setSelectedItem(String.valueOf(s.getObject("Gender")));
 
@@ -254,22 +269,13 @@ public class UpdateTrainee extends JFrame {
                         JButton button;
                         button = (JButton) e.getSource();
                         String what = button.getText();
-                       // int firstlength = firstName.getColumns(), lastlength = lastName.getColumns(), emaillength = emailText.getColumns();
+
 
                         if (what.equals("Save")){
                             try {
-                                String query = "INSERT INTO trainees VALUES(TraineeID('" + genderbox.getSelectedItem() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainer.getText() + "', '" + genderbox.getSelectedItem() + "')";
+                                String query = "INSERT INTO trainees VALUES(TraineeID('" + genderbox.getSelectedItem() + "', '" + firstName.getText() + "'), '" + firstName.getText() + "', '" + lastName.getText() + "', '" + emailText.getText() + "', '" + client.getText() + "', '" + trainerbox.getSelectedItem() + "', '" + genderbox.getSelectedItem() + "')";
                                 System.out.println(query);
                                 QASystems_databaseConnect.stat.execute(query);
-                               /* if (firstName.getText().length() > firstlength){
-                                    new Invalid_Details();
-                                }
-                                if (lastName.getText().length() > lastlength){
-                                    new Invalid_Details();
-                                }
-                                if (emailText.getText().length() > emaillength){
-                                    new Invalid_Details();
-                               } */
 
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
@@ -296,7 +302,7 @@ public class UpdateTrainee extends JFrame {
                             try {
                                 String query = "UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderText.getText() + "' WHERE Trainee_ID = '" + id.getText() + "'";
                                 System.out.println(query);
-                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainer.getText() + "', Gender = '" + genderbox.getSelectedItem() + "' WHERE Trainee_ID = '" + id.getText() + "'");
+                                QASystems_databaseConnect.stat.executeUpdate("UPDATE trainees SET First_Name = '" + firstName.getText() + "', Last_Name = '" + lastName.getText() + "', Email = '" + emailText.getText() + "', Client_ID = '" + client.getText() + "', Trainer_ID = '" + trainerbox.getSelectedItem() + "', Gender = '" + genderbox.getSelectedItem() + "' WHERE Trainee_ID = '" + id.getText() + "'");
                             } catch (SQLException e1) {
                                 e1.printStackTrace();
                             }

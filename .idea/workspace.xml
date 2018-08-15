@@ -12,42 +12,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QASystemsLogin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
+      <file leaf-file-name="QASystemsAdmin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="106" column="41" lean-forward="false" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
-              <folding>
-                <marker date="1532015823984" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
-                <marker date="1532015823984" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
-                <marker date="1532015823984" expanded="true" signature="2947:2982" ph="SELECT Usern... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateTrainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="186" column="117" lean-forward="false" selection-start-line="186" selection-start-column="117" selection-end-line="186" selection-end-column="117" />
-              <folding>
-                <marker date="1532088913268" expanded="true" signature="3385:3428" ph="SELECT * FRO... trainers" />
-                <marker date="1532088913268" expanded="true" signature="3385:3458" ph="SELECT * FRO... trainers" />
-                <marker date="1532088913268" expanded="true" signature="5109:5220" ph="DELETE FROM " />
-                <marker date="1532088913268" expanded="true" signature="6254:6369" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6391" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6399" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6457" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6482" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6486" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6520" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6521" ph="INSERT INTO trainers... " />
-                <marker date="1532088913268" expanded="true" signature="6254:6526" ph="INSERT INTO clients... " />
-                <marker date="1532088913268" expanded="true" signature="7256:7349" ph="UPDATE train... " />
-                <marker date="1532088913268" expanded="true" signature="7256:7352" ph="UPDATE train... " />
-                <marker date="1532088913268" expanded="true" signature="7351:7352" ph="UPDATE train... " />
-              </folding>
+            <state relative-caret-position="2112">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,19 +25,40 @@
       <file leaf-file-name="UpdateTrainee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="298" column="346" lean-forward="false" selection-start-line="298" selection-start-column="346" selection-end-line="298" selection-end-column="346" />
+            <state relative-caret-position="1914">
+              <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
               <folding>
-                <marker date="1532088346428" expanded="true" signature="5085:5148" ph="SELECT * FRO... trainees" />
-                <marker date="1532088346428" expanded="true" signature="6982:7043" ph="DELETE FROM " />
-                <marker date="1532088346428" expanded="true" signature="8042:8337" ph="INSERT INTO trainees... " />
-                <marker date="1532088346428" expanded="true" signature="8042:8338" ph="INSERT INTO trainees... " />
-                <marker date="1532088346428" expanded="true" signature="10129:10163" ph="UPDATE train... " />
-                <marker date="1532088346428" expanded="true" signature="10129:10273" ph="UPDATE train... " />
-                <marker date="1532088346428" expanded="true" signature="10129:10287" ph="UPDATE train... " />
-                <marker date="1532088346428" expanded="true" signature="10129:10310" ph="UPDATE train... " />
-                <marker date="1532088346428" expanded="true" signature="10129:10444" ph="UPDATE train... " />
+                <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+                <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+                <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+                <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+                <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+                <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+                <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+                <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+                <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+                <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cal_EventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wednesday/Cal_EventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculator_Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wednesday/Calculator_Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,8 +95,8 @@
         <option value="$PROJECT_DIR$/src/Friday/ViewClient.java" />
         <option value="$PROJECT_DIR$/src/Friday/QASystemsUser.java" />
         <option value="$PROJECT_DIR$/src/Friday/ViewTrainee.java" />
-        <option value="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" />
         <option value="$PROJECT_DIR$/src/Friday/UpdateTrainer.java" />
+        <option value="$PROJECT_DIR$/src/Friday/UpdateTrainee.java" />
       </list>
     </option>
   </component>
@@ -135,8 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -160,12 +149,26 @@
               <item name="Week2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Week2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Monday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Week2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Week2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Thursday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Week2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Week2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Wednesday" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -307,42 +310,47 @@
       <workItem from="1531900147826" duration="23066000" />
       <workItem from="1531986885906" duration="28672000" />
       <workItem from="1532072833713" duration="4927000" />
-      <workItem from="1532080441306" duration="8125000" />
+      <workItem from="1532080441306" duration="8618000" />
+      <workItem from="1532335254009" duration="1377000" />
+      <workItem from="1532338422775" duration="4311000" />
+      <workItem from="1532951981235" duration="304000" />
+      <workItem from="1533134715059" duration="573000" />
+      <workItem from="1534151427945" duration="6000" />
+      <workItem from="1534152272203" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87241000" />
+    <option name="totallyTimeSpent" value="94365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23913044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23913044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -358,6 +366,228 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Cal_EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Calculator_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Cal_EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Calculator_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="93" column="36" lean-forward="true" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="109" column="41" lean-forward="false" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystems_databaseConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6424">
+          <caret line="298" column="346" lean-forward="false" selection-start-line="298" selection-start-column="346" selection-end-line="298" selection-end-column="346" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1532015823984" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
+            <marker date="1532015823984" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
+            <marker date="1532015823984" expanded="true" signature="2947:2982" ph="SELECT Usern... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4092">
+          <caret line="186" column="117" lean-forward="false" selection-start-line="186" selection-start-column="117" selection-end-line="186" selection-end-column="117" />
+          <folding>
+            <marker date="1532088913268" expanded="true" signature="3385:3428" ph="SELECT * FRO... trainers" />
+            <marker date="1532088913268" expanded="true" signature="3385:3458" ph="SELECT * FRO... trainers" />
+            <marker date="1532088913268" expanded="true" signature="5109:5220" ph="DELETE FROM " />
+            <marker date="1532088913268" expanded="true" signature="6254:6369" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6391" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6399" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6457" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6482" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6486" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6520" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6521" ph="INSERT INTO trainers... " />
+            <marker date="1532088913268" expanded="true" signature="6254:6526" ph="INSERT INTO clients... " />
+            <marker date="1532088913268" expanded="true" signature="7256:7349" ph="UPDATE train... " />
+            <marker date="1532088913268" expanded="true" signature="7256:7352" ph="UPDATE train... " />
+            <marker date="1532088913268" expanded="true" signature="7351:7352" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6424">
+          <caret line="298" column="346" lean-forward="false" selection-start-line="298" selection-start-column="346" selection-end-line="298" selection-end-column="346" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2222">
@@ -375,15 +605,16 @@
         <state relative-caret-position="5412">
           <caret line="260" column="305" lean-forward="false" selection-start-line="260" selection-start-column="305" selection-end-line="260" selection-end-column="305" />
           <folding>
-            <marker date="1532088346428" expanded="true" signature="5085:5148" ph="SELECT * FRO... trainees" />
-            <marker date="1532088346428" expanded="true" signature="6982:7043" ph="DELETE FROM " />
-            <marker date="1532088346428" expanded="true" signature="8042:8337" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="8042:8338" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10163" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10273" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10287" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10310" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10444" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
           </folding>
         </state>
       </provider>
@@ -393,7 +624,7 @@
         <state relative-caret-position="110">
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
@@ -444,15 +675,16 @@
         <state relative-caret-position="6072">
           <caret line="282" column="0" lean-forward="false" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
           <folding>
-            <marker date="1532088346428" expanded="true" signature="5085:5148" ph="SELECT * FRO... trainees" />
-            <marker date="1532088346428" expanded="true" signature="6982:7043" ph="DELETE FROM " />
-            <marker date="1532088346428" expanded="true" signature="8042:8337" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="8042:8338" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10163" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10273" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10287" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10310" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10444" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
           </folding>
         </state>
       </provider>
@@ -498,7 +730,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
@@ -561,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/QASystems_databaseConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.39-bin.jar!/com/mysql/jdbc/Util.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -598,7 +823,7 @@
         <state relative-caret-position="-4132">
           <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1532082977619" expanded="true" signature="5520:5666" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5696" ph="INSERT INTO clients... " />
             <marker date="1532082977619" expanded="true" signature="5520:5720" ph="INSERT INTO clients... " />
@@ -642,14 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2962">
-          <caret line="153" column="25" lean-forward="true" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -668,27 +885,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="298" column="346" lean-forward="false" selection-start-line="298" selection-start-column="346" selection-end-line="298" selection-end-column="346" />
-          <folding>
-            <marker date="1532088346428" expanded="true" signature="5085:5148" ph="SELECT * FRO... trainees" />
-            <marker date="1532088346428" expanded="true" signature="6982:7043" ph="DELETE FROM " />
-            <marker date="1532088346428" expanded="true" signature="8042:8337" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="8042:8338" ph="INSERT INTO trainees... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10163" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10273" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10287" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10310" ph="UPDATE train... " />
-            <marker date="1532088346428" expanded="true" signature="10129:10444" ph="UPDATE train... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="22">
           <caret line="186" column="117" lean-forward="false" selection-start-line="186" selection-start-column="117" selection-end-line="186" selection-end-column="117" />
           <folding>
             <marker date="1532088913268" expanded="true" signature="3385:3428" ph="SELECT * FRO... trainers" />
@@ -712,13 +911,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="106" column="41" lean-forward="false" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+        <state relative-caret-position="225">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <marker date="1532015823984" expanded="true" signature="2468:2504" ph="SELECT Admin... admins" />
             <marker date="1532015823984" expanded="true" signature="2468:2506" ph="SELECT Usern... admins" />
             <marker date="1532015823984" expanded="true" signature="2947:2982" ph="SELECT Usern... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystems_databaseConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/QASystemsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="54" column="14" lean-forward="false" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friday/UpdateTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+          <folding>
+            <marker date="1532361559981" expanded="true" signature="3128:3159" ph="SELECT Train... trainers" />
+            <marker date="1532361559981" expanded="true" signature="5469:5532" ph="SELECT * FRO... trainees" />
+            <marker date="1532361559981" expanded="true" signature="7377:7438" ph="DELETE FROM " />
+            <marker date="1532361559981" expanded="true" signature="8296:8602" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="8296:8603" ph="INSERT INTO trainees... " />
+            <marker date="1532361559981" expanded="true" signature="9870:9904" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10014" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10028" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10051" ph="UPDATE train... " />
+            <marker date="1532361559981" expanded="true" signature="9870:10196" ph="UPDATE train... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Cal_EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wednesday/Calculator_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
